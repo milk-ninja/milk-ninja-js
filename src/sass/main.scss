@@ -1,5 +1,15 @@
 /* CSS Entry Point */
 
 // Turn on freq used libraries
-// @import 'normalize-css/normalize';
+@import 'normalize-css/normalize';
 // @import 'font-awesome/scss/font-awesome';
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+

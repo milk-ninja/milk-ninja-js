@@ -4,9 +4,13 @@ import { Route, Router, hashHistory, IndexRoute } from 'react-router';
 import { render } from 'react-dom';
 
 import Home from './home';
+import Register from './register';
+import Login from './login';
+import Dashboard from './dashboard';
+
 
 render((
-  <Router history={hashHistorloginy}>
+  <Router history={hashHistory}>
     <Route path="/" component={Home}>
       <Route path="/register" component={Register}/>
       <Route path="/login" component={Login}/>
