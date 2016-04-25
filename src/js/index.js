@@ -1,1 +1,1 @@
-// Javascript Entry Point
+// Javascript Entry Poin
