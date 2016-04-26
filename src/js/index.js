@@ -7,7 +7,9 @@ import Home      from './home';
 import Register  from './register';
 import Login     from './login';
 import Dashboard from './dashboard';
+import AddPlace   from './add_place';
 import Privacy   from './privacy';
+
 
 
 
@@ -17,6 +19,7 @@ render((
     <Route path="/register" component={Register}/>
     <Route path="/login" component={Login}/>
     <Route path="/dashboard" component={Dashboard}/>
+    <Route path="/add_place" component={AddPlace}/>
     <Route path="/privacy" component={Privacy}/>      
   </Router>
 ), document.querySelector('.app'));

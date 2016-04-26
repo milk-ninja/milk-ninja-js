@@ -18,6 +18,7 @@ export default class Home extends Component {
           <Link to="/register">Register</Link>
           <Link to="/login">Login</Link>
           <Link to="/dashboard">Dashboard</Link>
+          <Link to="/add_place">Add A Place</Link>
           <Link to="/privacy">Privacy Policy</Link>
         </div>
       </div>

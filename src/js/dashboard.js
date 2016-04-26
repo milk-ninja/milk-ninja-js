@@ -15,6 +15,7 @@ export default class Dashboard extends Component {
           <h2>Find a location.</h2>
           <input type="text" placeholder="Search"/>
           <button>Submit</button>
+          
         </div>
         <div className="register-login-wrapper">
           <Link to="/register">Back to Home</Link>
