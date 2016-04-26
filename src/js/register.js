@@ -52,7 +52,7 @@ export default class Register extends Component {
 		return (
 			<div className="register">
 				
-				<SSF onData={::this.dataHandler}>
+				<SSF onData={this.dataHandler}>
 					<div className="picture">
 						<Dropzone onDrop={::this.dropHandler}>
 							<span>Update Profile Picture</span>

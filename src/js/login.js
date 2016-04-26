@@ -46,7 +46,7 @@ export default class Login extends Component {
 			  
 			  <div>	
 				<h1>Login</h1>
-				<SSF onData={::this.dataHandler}>
+				<SSF onData={this.dataHandler}>
 					<div>
 						<input type="text" name="username" placeholder="username"/>
 					</div>
