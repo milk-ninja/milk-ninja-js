@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { Component } from 'react';
 import SSF from 'react-simple-serial-form';
 import cookie from 'cookie-js';
@@ -66,6 +66,4 @@ export default class Login extends Component {
 	}
 
 }
-=======
-import React, {Component} from 'react';
->>>>>>> fc1a1568601a3dbfa839099a3562c04f48733aed
+
