@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SSF from 'react-simple-serial-form';
-import cookie from 'cookie-js';
-import { ajax } from 'jquery';
+import cookie from 'js-cookie';
+import { ajax, ajaxSetup } from 'jquery';
 import { hashHistory } from 'react-router';
 import Dropzone from 'react-dropzone';
 
@@ -16,50 +16,67 @@ export default class Register extends Component {
 		}
 	}
 
-	dropHandler([file]) {
-		console.log([file]);
-		this.setState({preview: file.preview});
-		this.file = file;
-	}	
+	// dropHandler([file]) {
+	// 	console.log([file]);
+	// 	this.setState({preview: file.preview});
+	// 	this.file = file;
+	// }	
 
 
 	dataHandler(data) {
-		data.file = this.file;
+		// console.log(data);		
 
-		let newUser = new FormData();
-		console.log(newUser);
+		// data.file = this.file;
+
+		// let newUser = new FormData();
+
 		
-		newUser.append('file', data.file);
-		newUser.append('first_name', data.first_name);
-		newUser.append('last_name', data.last_name);
-		newUser.append('username', data.email);
-		newUser.append('password', data.password);
-		newUser.append('zipcode', data.zipcode);
+		// // newUser.append('file', data.file);
+		// newUser.append('first_name', data.first_name);
+		// newUser.append('last_name', data.last_name);
+		// newUser.append('username', data.email);
+		// newUser.append('password', data.password);
+		// newUser.append('zipcode', data.zipcode);
 
 		ajax({
 			url:'https://mighty-spire-68004.herokuapp.com/register',
 			type: 'POST',
-			data: newUser,
-			cached: false,
+			data: data,
+			cache: false,
 			dataType: 'json',		
-		}).then (hashHistory.push('/dashboard'))
+		}).then((response) => {
+			console.log(response);
+
+
+
+			ajaxSetup({
+				headers: {
+					'Auth-Token': response.user.auth_token 
+				}
+			})
+
+			cookie.set('currentUser', response.user, {expires: 3});
+ 		 	hashHistory.push('/dashboard');		
+
+		})
+
 	}	
 
 
 
-
+					// <div className="picture">
+					// 	<Dropzone onDrop={::this.dropHandler}>
+					// 		<span>Update Profile Picture</span>
+					// 		<input type="hidden" name="avatar" value={this.state.preview}/>
+					// 		<img className="profile-picture" src={this.state.preview}/>
+					// 	</Dropzone>
+					// </div>
 	render() {
 		return (
 			<div className="register">
 				
 				<SSF onData={this.dataHandler}>
-					<div className="picture">
-						<Dropzone onDrop={::this.dropHandler}>
-							<span>Update Profile Picture</span>
-							<input type="hidden" name="avatar" value={this.state.preview}/>
-							<img className="profile-picture" src={this.state.preview}/>
-						</Dropzone>
-					</div>
+
 					<div>
 						<input type="text" name="first_name" placeholder="First Name"/>
 					</div>
@@ -76,7 +93,7 @@ export default class Register extends Component {
 						<input type="password" name="password" placeholder="Enter a Password"/>
 					</div>
 					<div>
-						<input type="number" name="zipcode" placeholder="Enter Your Zip Code"/>
+						<input type="text" name="zipcode" placeholder="Enter Your Zip Code"/>
 					</div>
 					<button>Submit</button>
 				</SSF>
