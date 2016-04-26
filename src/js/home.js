@@ -15,8 +15,9 @@ export default class Home extends Component {
           <h2>Find great locations where you can comfortably feed your baby.</h2>
         </div>
         <div className="register-login-wrapper">
-          <button><Link to="/register">Register</Link></button>
-          <button><Link to="/login">Login</Link></button>
+          <Link to="/register">Register</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/privacy">Privacy Policy</Link>
         </div>
       </div>
       )
