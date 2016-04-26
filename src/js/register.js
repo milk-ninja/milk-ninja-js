@@ -16,20 +16,36 @@ export default class Register extends Component {
 		}
 	}
 
-	// dataHandler(newUser) {
-	// // 	ajax({
-	// // 		url:'???',
-	// // 		type: 'POST',
-	// // 		data: newUser,
-	// // 		cached: false,
-	// // 		dataType: 'json',		
-	// // 	}).then (hashHistory.push('/dashboard'))
-	// }	
-
 	dropHandler([file]) {
 		console.log([file]);
 		this.setState({preview: file.preview});
-	}
+		this.file = file;
+	}	
+
+
+	dataHandler(data) {
+		data.file = this.file;
+
+		let newUser = new FormData();
+		console.log(newUser);
+		
+		newUser.append('file', data.file);
+		newUser.append('first_name', data.first_name);
+		newUser.append('last_name', data.last_name);
+		newUser.append('username', data.email);
+		newUser.append('password', data.password);
+		newUser.append('zipcode', data.zipcode);
+
+		ajax({
+			url:'https://mighty-spire-68004.herokuapp.com/register',
+			type: 'POST',
+			data: newUser,
+			cached: false,
+			dataType: 'json',		
+		}).then (hashHistory.push('/dashboard'))
+	}	
+
+
 
 
 	render() {
