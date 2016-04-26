@@ -11,33 +11,33 @@ import { ajax, ajaxSetup } from 'jquery';
 
 export default class Login extends Component {
 
-	dataHandler(data) {
-		if (
-			data.username !== ''
-			&& data.username.length > 3
-			&& data.username.length < 16)
-		{
-			ajax({
-				url:'https://FILL ME IN',
-				type: 'POST',
-				data: data,
-				cached: false,
-				dataType: 'json'
-			}).then(response => {
+	// dataHandler(data) {
+	// 	if (
+	// 		data.username !== ''
+	// 		&& data.username.length > 3
+	// 		&& data.username.length < 16)
+	// 	{
+	// 		ajax({
+	// 			url:'https://FILL ME IN',
+	// 			type: 'POST',
+	// 			data: data,
+	// 			cached: false,
+	// 			dataType: 'json'
+	// 		}).then(response => {
 
-				console.log('response', response)
+	// 			console.log('response', response)
 
-				ajaxSetup({
-					headers: {
-						'Auth-Token': response.??.auth_token 
-					}
-				})
-				cookie.set('currentUser', response.???, {expires: 3});
-				hashHistory.push(`????`)
-			})
-		  })
-		}
-	}
+	// 			ajaxSetup({
+	// 				headers: {
+	// 					'Auth-Token': response.??.auth_token 
+	// 				}
+	// 			})
+	// 			cookie.set('currentUser', response.???, {expires: 3});
+	// 			hashHistory.push(`????`)
+	// 		})
+	// 	  })
+	// 	}
+	// }
 
 
 	render () {
