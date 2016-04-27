@@ -46,14 +46,6 @@ export default class Register extends Component {
 		}).then((response) => {
 			console.log(response);
 
-<<<<<<< HEAD
-=======
-			// ajaxSetup({
-			// 	headers: {
-			// 		'Auth-Token': response.user.auth_token 
-			// 	}
-			// })
->>>>>>> df8ac54fd4ddd9895e9bcdcdc62ac668def07770
 
 			cookie.set('currentUser', response.user, {expires: 3});
  		 	hashHistory.push('/dashboard');		
