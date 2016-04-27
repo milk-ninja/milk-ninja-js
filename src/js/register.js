@@ -5,8 +5,6 @@ import { ajax, ajaxSetup } from 'jquery';
 import { hashHistory } from 'react-router';
 import Dropzone from 'react-dropzone';
 
-/*Avatar??*/
-
 export default class Register extends Component {
 
 	constructor() {
@@ -26,15 +24,13 @@ export default class Register extends Component {
 	dataHandler(data) {
 		console.log(data);		
 
-		// data.file = this.file;
-
 		let newUser = new FormData();
 
-		
 		newUser.append('avatar', this.file);
 		newUser.append('first_name', data.first_name);
 		newUser.append('last_name', data.last_name);
-		newUser.append('username', data.email);
+		newUser.append('username', data.username);
+		newUser.append('email', data.email);
 		newUser.append('password', data.password);
 		newUser.append('zipcode', data.zipcode);
 
@@ -48,8 +44,6 @@ export default class Register extends Component {
 			contentType: false,	
 		}).then((response) => {
 			console.log(response);
-
-
 
 			// ajaxSetup({
 			// 	headers: {
