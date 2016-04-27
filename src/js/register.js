@@ -5,8 +5,6 @@ import { ajax, ajaxSetup } from 'jquery';
 import { hashHistory } from 'react-router';
 import Dropzone from 'react-dropzone';
 
-/*Avatar??*/
-
 export default class Register extends Component {
 
 	constructor() {
@@ -26,11 +24,8 @@ export default class Register extends Component {
 	dataHandler(data) {
 		console.log(data);		
 
-		// data.file = this.file;
-
 		let newUser = new FormData();
 
-		
 		newUser.append('avatar', this.file);
 		newUser.append('first_name', data.first_name);
 		newUser.append('last_name', data.last_name);
@@ -51,6 +46,14 @@ export default class Register extends Component {
 		}).then((response) => {
 			console.log(response);
 
+<<<<<<< HEAD
+=======
+			// ajaxSetup({
+			// 	headers: {
+			// 		'Auth-Token': response.user.auth_token 
+			// 	}
+			// })
+>>>>>>> df8ac54fd4ddd9895e9bcdcdc62ac668def07770
 
 			cookie.set('currentUser', response.user, {expires: 3});
  		 	hashHistory.push('/dashboard');		
