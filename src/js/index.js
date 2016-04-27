@@ -9,6 +9,7 @@ import Login     from './login';
 import Dashboard from './dashboard';
 import AddPlace   from './add_place';
 import Privacy   from './privacy';
+import MapView   from './mapview';
 
 
 
@@ -18,9 +19,11 @@ render((
     <Route path="/" component={Home}/>
     <Route path="/register" component={Register}/>
     <Route path="/login" component={Login}/>
-    <Route path="/dashboard" component={Dashboard}/>
-    <Route path="/add_place" component={AddPlace}/>
-    <Route path="/privacy" component={Privacy}/>      
+    <Route path="/dashboard" component={Dashboard}>
+    	<IndexRoute component={MapView}/>
+    	<Route path="/add_place" component={AddPlace}/>
+    	<Route path="/privacy" component={Privacy}/>  
+    </Route>    
   </Router>
 ), document.querySelector('.app'));
 
