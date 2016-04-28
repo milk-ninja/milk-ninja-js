@@ -10,7 +10,7 @@ export default class Register extends Component {
 	constructor() {
 		super();
 		this.state = {
-			preview: 'http://sunfieldfarm.org/wp-content/uploads/2014/02/profile-placeholder.png'
+			preview: './images/profile-placeholder.png'
 		}
 	}
 
@@ -61,13 +61,7 @@ export default class Register extends Component {
 		return (
 			<div className="register">
 				<SSF onData={::this.dataHandler}>
-					<div className="picture">
-						<Dropzone onDrop={::this.dropHandler}>
-							<span>Update Profile Picture</span>
-							<input type="hidden" name="avatar" value={this.state.preview}/>
-							<img className="profile-picture" src={this.state.preview}/>
-						</Dropzone>
-					</div>
+					
 					<div>
 						<input type="text" name="first_name" placeholder="First Name"/>
 					</div>
@@ -85,6 +79,14 @@ export default class Register extends Component {
 					</div>
 					<div>
 						<input type="text" name="zipcode" placeholder="Enter Your Zip Code"/>
+					</div>
+
+					<div className="picture">
+						<Dropzone onDrop={::this.dropHandler}>
+							<span>Update Profile Picture</span>
+							<input type="hidden" name="avatar" value={this.state.preview}/>
+							<img className="profile-picture" src={this.state.preview}/>
+						</Dropzone>
 					</div>
 					<button>Submit</button>
 				</SSF>
