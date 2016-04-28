@@ -3,11 +3,9 @@
 // Turn on freq used libraries
 @import 'normalize-css/normalize';
 @import 'font-awesome/scss/font-awesome';
-<<<<<<< HEAD
 @import 'add_place';
-=======
 @import 'dashboard';
->>>>>>> d910a9849a527f66632415e6990a7c1b627cb516
+
 
 * {
   list-style-type: none;
@@ -90,11 +88,9 @@ p {
   text-align: center;
 }
 
-<<<<<<< HEAD
-#register-btn, #login-btn, #add-place-btn {
-=======
-#register-btn, #login-btn, #logout-btn {
->>>>>>> d910a9849a527f66632415e6990a7c1b627cb516
+
+#register-btn, #login-btn, #add-place-btn, #logout-btn {
+
    border-top: 1px solid #9db2bf;
    background: #5a8db0;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
