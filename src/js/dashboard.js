@@ -78,9 +78,9 @@ export default class Dashboard extends Component {
 
           <div className="main-wrapper">
                <aside>
-                    <Link to={'/add_place'}>Add A Place</Link>
                     <Link to={'/add_place'}>Find A Place</Link>
-
+                    
+                    <Link to={'/add_place'}>Add A Place</Link>
                </aside>
 
                <main>
