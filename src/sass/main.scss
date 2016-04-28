@@ -10,12 +10,101 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
+}
+
+.app {
+  max-width: 400px;
+  border: 2px solid black;
+
+  
 }
 
 .home {
-  img {
-    display: block;
+  width: 100%;
+
+    .title-image-wrapper {
+      img {
+        display: block;
+        margin: auto;
+        height: 250px;
+      }
+
+    .describe-wrapper {
+
+    }
+
+    
+
+    .login-wrapper {
+
+    }
+    
   }
+    
 }
 
+h1, h2 {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin: 10px;
+}
+
+.home-link {
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+}
+
+.register-wrapper, .login-wrapper {
+  width: 125px;
+  margin: auto;
+}
+
+.login-wrapper, .register-wrapper {
+  p {
+    display: block;
+  }
+
+}
+
+p {
+  font-size: .75em;
+  text-align: center;
+}
+
+#register-btn, #login-btn {
+   border-top: 1px solid #9db2bf;
+   background: #5a8db0;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
+   background: -webkit-linear-gradient(top, #3e779d, #5a8db0);
+   background: -moz-linear-gradient(top, #3e779d, #5a8db0);
+   background: -ms-linear-gradient(top, #3e779d, #5a8db0);
+   background: -o-linear-gradient(top, #3e779d, #5a8db0);
+   padding: 8px 16px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 13px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin: 5px 5px;
+   
+#register-btn:hover, #login-btn:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+}
 
