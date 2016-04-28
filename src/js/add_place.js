@@ -40,19 +40,47 @@ export default class AddPlace extends Component {
         
         <div className="add-place">
           <SSF onData={::this.dataHandler}>
-            <h4>Name of Place</h4>
-            <input type="text" name="place" placeholder="What would you call this place?"/>
-            <h4>Address</h4>
-            <input type="text" name="address" placeholder="Type the Address Here"/>
-            <h4>Describe the Area</h4>
-            <input type="text" name="feed_area_description" placeholder="First floor...etc"/>
+            <div className="add-place-form">
+              <h4>Name of Place</h4>
+              <input type="text" name="place" placeholder="What would you call this place?"/>
+            </div>
+            <div className="add-place-form">
+              <h4>Address</h4>
+              <input type="text" name="address" placeholder="Type the Address Here"/>
+            </div>
+            <div className="add-place-form">
+              <h4>Describe the Area</h4>
+              <input type="text" name="feed_area_description" placeholder="First floor...etc"/>
+            </div>
+            <div className="add-place-form">
             <h4>Cleanliness Rating</h4>
-            <input type="number" name="clean_rating" placeholder="Type a Number between 1-5"/>
+           {/*} <input type="number" name="clean_rating" placeholder="Type a Number between 1-5"/>*/}
+              <ul className="radio-button">
+                <li><label><input type="radio" name="clean" value="1"/>Poor</label></li>
+                <li><label><input type="radio" name="clean" value="2"/>Fair</label></li>
+                <li><label><input type="radio" name="clean" value="3"/>Average</label></li>
+                <li><label><input type="radio" name="clean" value="4"/>Good</label></li>
+                <li><label><input type="radio" name="clean" value="5"/>Excellent</label></li>
+              </ul>
+            </div>
+            <div className="add-place-form">
             <h4>Privacy Rating</h4>
-            <input type="number" name="private_rating" placeholder="Type a Number between 1-5"/>
-            <h4>Comments</h4>
-            <textarea id="comments" name="comments"/>
-            <button>Submit</button>
+            {/*}  <input type="number" name="private_rating" placeholder="Type a Number between 1-5"/>*/}
+              <ul className="radio-button">
+                <li><label><input type="radio" name="privacy" value="1"/>Poor</label></li>
+                <li><label><input type="radio" name="privacy" value="2"/>Fair</label></li>
+                <li><label><input type="radio" name="privacy" value="3"/>Average</label></li>
+                <li><label><input type="radio" name="privacy" value="4"/>Good</label></li>
+                <li><label><input type="radio" name="privacy" value="5"/>Excellent</label></li>
+              </ul>
+            </div>
+            <div className="add-place-form">
+              <h4>Comments</h4>
+              <textarea id="comments" name="comments"/>
+            </div>
+            <div className="add-btn">
+              <button id="add-place-btn">Submit</button>
+            </div> 
           </SSF>
         </div>
 

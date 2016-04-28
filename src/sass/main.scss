@@ -78,7 +78,7 @@ p {
   text-align: center;
 }
 
-#register-btn, #login-btn {
+#register-btn, #login-btn, #add-place-btn {
    border-top: 1px solid #9db2bf;
    background: #5a8db0;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
@@ -101,10 +101,41 @@ p {
    vertical-align: middle;
    margin: 5px 5px;
    
-#register-btn:hover, #login-btn:hover {
+#register-btn:hover, #login-btn:hover, #add-place-btn {
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
    }
 }
+
+.radio-button {
+  display: flex;
+  margin-right: 1em;
+  li {
+    font-size: 14px;
+  }
+  input {
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+}
+
+.add-place-form {
+  margin: 1em;
+  h4 {
+    margin-bottom: .5em;
+  }
+  textarea {
+    width: 90%;
+  }
+}
+
+#add-place-btn {
+  margin-left: 70%;
+}
+
+
+
+
+
 
