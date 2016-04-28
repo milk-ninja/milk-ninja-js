@@ -35,7 +35,7 @@ export default class Dashboard extends Component {
   
   render() {
 
-     let currentUser = cookie.JSON('currentUser');
+     let currentUser = cookie.getJSON('currentUser');
 
 
     return (

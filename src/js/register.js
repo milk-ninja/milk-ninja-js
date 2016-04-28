@@ -33,6 +33,7 @@ export default class Register extends Component {
 		newUser.append('email', data.email);
 		newUser.append('password', data.password);
 		newUser.append('zipcode', data.zipcode);
+		console.log(newUser);
 
 		ajax({
 			url:'https://mighty-spire-68004.herokuapp.com/register',
@@ -45,11 +46,6 @@ export default class Register extends Component {
 		}).then((response) => {
 			console.log(response);
 
-			// ajaxSetup({
-			// 	headers: {
-			// 		'Auth-Token': response.user.auth_token 
-			// 	}
-			// })
 
 			cookie.set('currentUser', response.user, {expires: 3});
  		 	hashHistory.push('/dashboard');		
