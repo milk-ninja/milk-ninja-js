@@ -1,0 +1,30 @@
+
+
+
+// .add-place {
+//   height: 100%;
+//   overflow: scroll;
+// }
+.radio-button {
+  display: flex;
+  margin-right: 1em;
+  li {
+    font-size: 14px;
+  }
+  input {
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+}
+
+.add-place-form {
+  margin: 1em;
+  h4 {
+    margin-bottom: .5em;
+  }
+  textarea {
+    width: 90%;
+  }
+
+}
+
