@@ -1,0 +1,36 @@
+
+
+.dashboard {
+  min-height: 100%;
+  box-sizing: border-box;
+
+}
+
+header {
+  background: green;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-size: 2em;
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  background: yellow;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 1500px;
+}
+
+footer {
+  background: blue;
+  display: flex;
+  height: 90px;
+}

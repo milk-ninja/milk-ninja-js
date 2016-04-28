@@ -67,26 +67,38 @@ export default class Dashboard extends Component {
         <div className="dashboard">
          
           <header>
-             <img src="./images/babyninja-300x300.png"/>
-              <span>Hi, {currentUser.first_name}</span>
 
-              <button onClick={this.logOut}>Log Out</button>
+            <span>Hi, {currentUser.first_name}</span>
 
-              <h2>{this.state.locationStatus}</h2>        
+            <button id="logout-btn" onClick={this.logOut}>Log Out</button>
+
+            {/*<h2>{this.state.locationStatus}</h2>*/}  
+
           </header>
 
           <div className="main-wrapper">
                <aside>
                     <Link to={'/add_place'}>Add A Place</Link>
+                    <Link to={'/add_place'}>Find A Place</Link>
+
                </aside>
 
-               <div className="content">
+               <main>
 
                     {this.props.children}
 
-               </div>
+               </main>
 
           </div>
+
+          <footer>
+              <span>&copy; MilkNinja 2016</span>
+              <span>
+                <Link to={'/privacy'}>Privacy Policy</Link>
+              </span> 
+
+          </footer>
+
         </div>
 
 

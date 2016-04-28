@@ -8,7 +8,7 @@ export default class Privacy extends Component {
   
   render() {
     return(
-      <div className="home">
+      <div className="privacy-policy">
         <div className="title-image-describe-wrapper">
           <h1>Milk Ninja</h1>
           <img src="./images/babyninja-300x300.png"/>
