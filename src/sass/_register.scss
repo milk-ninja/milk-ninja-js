@@ -1,18 +1,25 @@
 
+
+
 .register {
   min-height: 100vh;
-  border: 1px solid red;
+  // border: 1px solid red;
   font-size: 1.5em;
+    background: #74b7bb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
   h1 {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
 .register-input {
   margin-left: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }	
 
 input {
@@ -21,14 +28,51 @@ input {
    	font-size: 2em;
    	min-width: 90%;
    	border: .25px solid black;
+    border-radius: 8px;
    	padding: .5em;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
    }
 
+
+#dropzone {
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.picture {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  // border: 1px solid red;
+  position: relative;
+
+}
+
 img.profile-picture {
-	height: 300px;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+form {
+  height: 100vh;
+  position: relative;
+
+}
+
+#reg-btn {
+  position: absolute;
+  bottom: 4em;
+  left: 8em;
 }
 
 

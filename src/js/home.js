@@ -21,12 +21,12 @@ export default class Home extends Component {
 
         <div className="register-wrapper">
           <p className="home-link">New User?</p>
-          <Link to="/register" className="home-link" id="register-btn">Find A Place</Link>
+          <Link to="/register" className="home-link" className="register-btn">Find A Place</Link>
         </div>
         
         <div className="login-wrapper">  
           <p className="home-link">Returning User?</p>
-          <Link to="/login" id="login-btn" className="home-link">Login</Link>
+          <Link to="/login" className="login-btn" className="home-link">Login</Link>
         </div>
 
       </div>

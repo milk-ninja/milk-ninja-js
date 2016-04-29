@@ -6,6 +6,7 @@
 @import 'add_place';
 @import 'dashboard';
 @import 'register';
+@import 'login';
 
 
 * {
@@ -110,7 +111,7 @@ p {
 }
 
 
-#register-btn, #login-btn, #add-place-btn, #logout-btn {
+.register-btn, .login-btn, #add-place-btn, #logout-btn {
 
    border-top: 1px solid #9db2bf;
    background: #5a8db0;
@@ -134,7 +135,7 @@ p {
    vertical-align: middle;
    margin: 5px 5px;
    
-#register-btn:hover, #login-btn:hover, #add-place-btn {
+.register-btn:hover, .login-btn:hover, #add-place-btn {
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;

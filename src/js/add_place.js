@@ -58,22 +58,22 @@ export default class AddPlace extends Component {
             <h4>Cleanliness Rating</h4>
            {/*} <input type="number" name="clean_rating" placeholder="Type a Number between 1-5"/>*/}
               <ul className="radio-button">
-                <li><label><input type="radio" name="clean" value="1"/>Poor</label></li>
-                <li><label><input type="radio" name="clean" value="2"/>Fair</label></li>
-                <li><label><input type="radio" name="clean" value="3"/>Average</label></li>
-                <li><label><input type="radio" name="clean" value="4"/>Good</label></li>
-                <li><label><input type="radio" name="clean" value="5"/>Excellent</label></li>
+                <li><label><input type="radio" className="input-circle" name="clean" value="1"/>Poor</label></li>
+                <li><label><input type="radio" className="input-circle" name="clean" value="2"/>Fair</label></li>
+                <li><label><input type="radio" className="input-circle" name="clean" value="3"/>Average</label></li>
+                <li><label><input type="radio" className="input-circle" name="clean" value="4"/>Good</label></li>
+                <li><label><input type="radio" className="input-circle" name="clean" value="5"/>Excellent</label></li>
               </ul>
             </div>
             <div className="add-place-form">
             <h4>Privacy Rating</h4>
             {/*}  <input type="number" name="private_rating" placeholder="Type a Number between 1-5"/>*/}
               <ul className="radio-button">
-                <li><label><input type="radio" name="privacy" value="1"/>Poor</label></li>
-                <li><label><input type="radio" name="privacy" value="2"/>Fair</label></li>
-                <li><label><input type="radio" name="privacy" value="3"/>Average</label></li>
-                <li><label><input type="radio" name="privacy" value="4"/>Good</label></li>
-                <li><label><input type="radio" name="privacy" value="5"/>Excellent</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="1"/>Poor</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="2"/>Fair</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="3"/>Average</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="4"/>Good</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="5"/>Excellent</label></li>
               </ul>
             </div>
             <div className="add-place-form">

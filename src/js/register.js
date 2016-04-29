@@ -83,13 +83,15 @@ export default class Register extends Component {
 					</div>
 
 					<div className="picture">
-						<Dropzone onDrop={::this.dropHandler}>
-							<span>Update Profile Picture</span>
+						<Dropzone onDrop={::this.dropHandler} id="dropzone">
+							<span>Update Profile Picture</span>		
 							<input type="hidden" name="avatar" value={this.state.preview}/>
 							<img className="profile-picture" src={this.state.preview}/>
+				
 						</Dropzone>
 					</div>
-					<button>Submit</button>
+					<br/>
+					<button id="reg-btn" className="register-btn">Submit</button>
 				</SSF>
 			
 			</div>
