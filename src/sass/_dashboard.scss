@@ -1,4 +1,11 @@
 
+$font-stack:    Helvetica, sans-serif;
+
+$app-black: #04050A;
+$app-drk-blue: #0E2234;
+$app-lt-blue: #74B7BB;
+$app-white: #E7EAE1;
+$app-red: #BA0D12;
 
 .dashboard {
   min-height: 100%;
@@ -7,13 +14,14 @@
 }
 
 header {
-  background: green;
+  background: $app-drk-blue;
   height: 150px;
   display: flex;
   justify-content: space-between;
 
   span {
     font-size: 2em;
+    color: $app-white;
   }
 }
 
@@ -21,7 +29,7 @@ aside {
   display: flex;
   flex-direction: column;
   width: 175px;
-  background: yellow;
+  background: $app-lt-blue;
   i {
     color: white;
   }
@@ -30,10 +38,57 @@ aside {
 .main-wrapper {
   display: flex;
   height: 1500px;
+  i {
+    font-size: 2em;
+    color: white;
+  }
 }
 
 footer {
-  background: blue;
+  background: $app-red;
   display: flex;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  a, span, i {
+    color: white;
+  }
+  .nav-links {
+   display: flex;
+    align-items: center;
+    a {
+      margin: 0 .5em;
+      font-size: 2em;
+    }
+  } 
+  .official {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 1em;
+      font-size: 1.25em;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

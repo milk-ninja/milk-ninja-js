@@ -33,7 +33,3 @@ export default class Home extends Component {
       )
   }
 }
-
-          // <Link to="/dashboard" className="home-link">Dashboard</Link>
-          // <Link to="/add_place" className="home-link">Add A Place</Link>
-          // <Link to="/privacy" className="home-link">Privacy Policy</Link>
