@@ -4,6 +4,8 @@ import { Link, hashHistory } from 'react-router';
 import { agax } from 'jquery';
 import cookie from 'js-cookie';
 
+// import Icon from 'font-awesome';
+
 // import FourSquare from './foursquare';
 
 export default class Dashboard extends Component {
@@ -61,6 +63,10 @@ export default class Dashboard extends Component {
   render() {
 
      let currentUser = cookie.getJSON('currentUser');
+     console.log('current user', currentUser);
+     console.log('current user name', currentUser.first_name);
+     console.log('current user avatar', currentUser.avatar)
+
 
 
     return (
@@ -68,7 +74,7 @@ export default class Dashboard extends Component {
          
           <header>
 
-            <span>Hi, {currentUser.first_name}</span>
+            <span><img src={currentUser.avatar}/> {currentUser.first_name}</span>
 
             <button id="logout-btn" onClick={this.logOut}>Log Out</button>
 
@@ -77,11 +83,6 @@ export default class Dashboard extends Component {
           </header>
 
           <div className="main-wrapper">
-               <aside>
-                    <Link to={'/add_place'}>Find A Place</Link>
-                    
-                    <Link to={'/add_place'}>Add A Place</Link>
-               </aside>
 
                <main>
 
@@ -92,10 +93,18 @@ export default class Dashboard extends Component {
           </div>
 
           <footer>
-              <span>&copy; MilkNinja 2016</span>
+
+            <div className="nav-links">
+              <Link to={'/add_place'}><i className="fa fa-search" aria-hidden="true"/>Find A Place</Link>
+              <Link to={'/add_place'}><i className="fa fa-plus-circle" aria-hidden="true"/>Add A Place</Link>
+            </div>
+
+            <div className="official">
+              <span>&copy; Milk Ninja 2016</span>
               <span>
                 <Link to={'/privacy'}>Privacy Policy</Link>
               </span> 
+            </div>
 
           </footer>
 
