@@ -39,6 +39,8 @@ export default class AddPlace extends Component {
       return(
         
         <div className="add-place">
+        <h1>Add A New Place...</h1>
+        <span>to help others feed their baby in a quiet place.</span>
           <SSF onData={::this.dataHandler}>
             <div className="add-place-form">
               <h4>Name of Place</h4>

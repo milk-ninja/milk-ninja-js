@@ -60,24 +60,25 @@ export default class Register extends Component {
 	render() {
 		return (
 			<div className="register">
+			  <h1>Registration</h1>
 				<SSF onData={::this.dataHandler}>
 					
-					<div>
+					<div className="register-input">
 						<input type="text" name="first_name" placeholder="First Name"/>
 					</div>
-					<div>
+					<div className="register-input">
 						<input type="text" name="last_name" placeholder="Last Name"/>
 					</div>
-					<div>
+					<div className="register-input">
 						<input type="text" name="username" placeholder="Choose a username"/>
 					</div>
-					<div>
+					<div className="register-input">
 						<input type="email" name="email" placeholder="Email Address"/>
 					</div>
-					<div>
+					<div className="register-input">
 						<input type="password" name="password" placeholder="Enter a Password"/>
 					</div>
-					<div>
+					<div className="register-input">
 						<input type="text" name="zipcode" placeholder="Enter Your Zip Code"/>
 					</div>
 
