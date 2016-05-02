@@ -62,11 +62,17 @@ export default class MapView extends Component {
          console.log('this map', this.map);
 
 		  // function initMap() {
-		    let map = new google.maps.Map(this.map, {
+		  let map = new google.maps.Map(this.map, {
 		      // center: {lat: 33.751894, lng: -84.391327},
-		      center: {lat, lng},
-		      zoom: 16
-		    });
+		    center: {lat, lng},
+		    zoom: 16
+		  });
+
+		  let marker = new google.maps.Marker({
+		  	position: {lat, lng},
+		  	map: map,
+		  	title: "My Location"
+		  })
 	         // this.setState({locationStatus: 'Finding spots near you.'});
 		  // }
 		});
@@ -77,7 +83,6 @@ export default class MapView extends Component {
 	render() {
 		return (
 			<div className="mapview">
-				<span> THIS IS THE MAP VIEW OF WHERE THE PERSON IS STANDING </span>
 				<div id="map" ref={ theActualDivElement => this.map = theActualDivElement }></div>
 			</div>
 		)
