@@ -24,7 +24,7 @@ export default class AddPlace extends Component {
     newPlace.append('street', data.street);
     newPlace.append('city', data.city);
     newPlace.append('state', data.state);
-    newPlace.append('zipcode', data.zipcode);
+    newPlace.append('zip', data.zip);
     newPlace.append('description', data.description);
     newPlace.append('lat', data.lat);
     newPlace.append('long', data.long);
@@ -35,17 +35,19 @@ export default class AddPlace extends Component {
       data: data,
       cached: false,
       dataType: 'json',   
-    }).then ((response) => {
+    }).then((response) => {
 
-        console.log('response', response)
+        // console.log('response', response)
 
-        ajaxSetup({
-          headers: {
-            'Auth-Token': response.user.auth_token 
-          }
-        })
-        cookie.set('currentUser', response.user, {expires: 3});
+        // ajaxSetup({
+        //   headers: {
+        //     'Auth-Token': response.user.auth_token 
+        //   }
+        // })
+        // cookie.set('currentUser', response.user, {expires: 3});
         hashHistory.push('/dashboard')
+
+        // PLACE IS ADDED -- do something else?
       })
     }
 
@@ -74,7 +76,7 @@ export default class AddPlace extends Component {
             </div>
             <div className="add-place-form">
               <h4>Zip Code</h4>
-              <input type="text" name="zipcode" placeholder="Zip Code"/>
+              <input type="text" name="zip" placeholder="Zip Code"/>
             </div>
             <div className="add-place-form">
               <h4>Describe the Area</h4>
