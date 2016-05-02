@@ -7,5 +7,11 @@
 <body>
   <div class="app"></div>
   <script src="js/bundle.js"></script>
+  <script>
+      function initMap() {
+        window.mapLoaded = true;
+      }
+    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu4AXTnCQ36ZFW9JHU-OC5sxO2bCxLA_A&callback=initMap" async defer></script>
 </body>
 </html>
