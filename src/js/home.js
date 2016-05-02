@@ -26,7 +26,7 @@ export default class Home extends Component {
         
         <div className="login-wrapper">  
           <p className="home-link">Returning User?</p>
-          <Link to="/login" className="login-btn" className="home-link">Login</Link>
+          <Link to="/login" id="login-btn" className="home-link">Login</Link>
         </div>
 
       </div>

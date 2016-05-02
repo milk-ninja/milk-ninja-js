@@ -11,14 +11,14 @@
   background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
   h1 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 3em;
   }
 }
 
 .register-input {
-  margin-left: 1em;
+  padding-left: 1em;
   margin-bottom: 2em;
 }	
 
@@ -56,11 +56,11 @@ input {
 
 img.profile-picture {
   width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
 }
 
 form {
