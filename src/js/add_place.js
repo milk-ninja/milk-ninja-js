@@ -18,7 +18,7 @@ export default class AddPlace extends Component {
     dataHandler(data) {
 
     let newPlace = new FormData();
-    // console.log(data);
+    console.log(data);
     
     newPlace.append('name', data.name);
     newPlace.append('street', data.street);
@@ -62,23 +62,31 @@ export default class AddPlace extends Component {
             </div>
             <div className="add-place-form">
               <h4>Building Number & Street Name (add NE, SW, etc)</h4>
-              <input type="text" name="street" placeholder="Type the Address Here"/>
+              <input type="text" name="street" placeholder="Building Number and Street Name"/>
             </div>
             <div className="add-place-form">
               <h4>City</h4>
-              <input type="text" name="city" placeholder="Type the Address Here"/>
+              <input type="text" name="city" placeholder="City"/>
             </div>
             <div className="add-place-form">
               <h4>State</h4>
-              <input type="text" name="state" placeholder="Type the Address Here"/>
+              <input type="text" name="state" placeholder="State"/>
             </div>
             <div className="add-place-form">
               <h4>Zip Code</h4>
-              <input type="text" name="zipcode" placeholder="Type the Address Here"/>
+              <input type="text" name="zipcode" placeholder="Zip Code"/>
             </div>
             <div className="add-place-form">
               <h4>Describe the Area</h4>
               <input type="text" name="description" placeholder="First floor...etc"/>
+            </div>
+            <div className="add-place-form">
+              <h4>Latitude</h4>
+              <input type="text" name="lat" placeholder="Latitude"/>
+            </div>
+            <div className="add-place-form">
+              <h4>Longitude</h4>
+              <input type="text" name="long" placeholder="Longitude"/>
             </div>
             {/*<div className="add-place-form">
             <h4>Cleanliness Rating</h4>
