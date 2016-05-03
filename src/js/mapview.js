@@ -49,7 +49,8 @@ export default class MapView extends Component {
 // }
 
 
-	componentDidMount() {
+	
+  componentDidMount() {
 
       this.setState({locationStatus: 'Pinpointing your location..'});
 

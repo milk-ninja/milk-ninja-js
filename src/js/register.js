@@ -64,22 +64,22 @@ export default class Register extends Component {
 				<SSF onData={::this.dataHandler}>
 					
 					<div className="register-input">
-						<input type="text" name="first_name" placeholder="First Name"/>
+						<input type="text" name="first_name" className="reg-input-box" placeholder="First Name"/>
 					</div>
 					<div className="register-input">
-						<input type="text" name="last_name" placeholder="Last Name"/>
+						<input type="text" name="last_name" className="reg-input-box" placeholder="Last Name"/>
 					</div>
 					<div className="register-input">
-						<input type="text" name="username" placeholder="Choose a username"/>
+						<input type="text" name="username" className="reg-input-box" placeholder="Choose a username"/>
 					</div>
 					<div className="register-input">
-						<input type="email" name="email" placeholder="Email Address"/>
+						<input type="email" name="email" className="reg-input-box" placeholder="Email Address"/>
 					</div>
 					<div className="register-input">
-						<input type="password" name="password" placeholder="Enter a Password"/>
+						<input type="password" name="password" className="reg-input-box" placeholder="Enter a Password"/>
 					</div>
 					<div className="register-input">
-						<input type="text" name="zipcode" placeholder="Enter Your Zip Code"/>
+						<input type="text" name="zipcode" className="reg-input-box" placeholder="Enter Your Zip Code"/>
 					</div>
 
 					<div className="picture">
