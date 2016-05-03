@@ -44,10 +44,10 @@ export default class Login extends Component {
 				<h1>Login</h1>
 				<SSF onData={this.dataHandler}>
 					<div>
-						<input type="text" name="username" placeholder="username"/>
+						<input type="text" name="username" className="reg-input-box" placeholder="username"/>
 					</div>
 					<div>
-						<input type="password" name="password" placeholder="password"/>
+						<input type="password" name="password" className="reg-input-box" placeholder="password"/>
 					</div>
 					<button className="login-btn">Submit</button>
 				</SSF>

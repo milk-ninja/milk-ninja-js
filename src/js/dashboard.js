@@ -22,42 +22,6 @@ export default class Dashboard extends Component {
           hashHistory.push('/');
      }
 
-//PLACEHOLDER STATIC MAP
-
-// componentWillMount() {
-//   var map;
-//   function initMap() {
-//     let map = new google.maps.Map(document.getElementID('map'), {
-//       center: {lat: 33.751894, lng: -84.391327},
-//       zoom: 10
-//     })
-//   }
-// }
-
-//START OF COMPONENT WILL MOUNT FUNCTION
-  // componentWillMount() {
-  //    this.setState({locationStatus: 'Pinpointing your location..'});
-
-  //    if ("geolocation" in navigator) {
-  //       navigator.geolocation.getCurrentPosition(function(position)  {
-  //         this.setState({locationStatus: 'Finding spots near you.'});
-
-  //         ajax('')
-
-  //       })
-  //    }
-
-  //   }   
-
-
-    // this.setState({locationStatus: 'Pinpointing your location..'});     // run the code that pinpoints the location
-     //      then (in the callback)
-     //      this.setState({locationStatus: 'Finding spots near you.'});
-     //      ajax -> ask the backend for spots based on location
-     //           then
-     //           show them the spots
-     //           this.setState({locationStatus: 'Found X spots near you.'});
-
 
   
   render() {
