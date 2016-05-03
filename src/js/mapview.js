@@ -78,17 +78,17 @@ export default class MapView extends Component {
 		});
 	}
 
-		ajax({
-			url: `https://api.foursquare.com/v2/venues/search
-							?client_id=4U40TREA4FBFLA30KJMOZQ1N5JFD4GOBCP5UOAGAZ5PNOUWK
-							&client_secret=CVGJLHENYIVZBAHVKOAVJQHR3BJSP25U53R5VRPLXGSTRMEQ
-							&v=20130815
-							&ll=${lat},${lng}
-							&query=baby+stores`
-		}).then((response) => {
-			console.log(response);
+		// ajax({
+		// 	url: `https://api.foursquare.com/v2/venues/search
+		// 					?client_id=4U40TREA4FBFLA30KJMOZQ1N5JFD4GOBCP5UOAGAZ5PNOUWK
+		// 					&client_secret=CVGJLHENYIVZBAHVKOAVJQHR3BJSP25U53R5VRPLXGSTRMEQ
+		// 					&v=20130815
+		// 					&ll=${lat},${lng}
+		// 					&query=baby+stores`
+		// }).then((response) => {
+		// 	console.log(response);
 
-		})
+		// })
 
   }
 

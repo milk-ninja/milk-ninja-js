@@ -45,7 +45,7 @@ export default class AddPlace extends Component {
         //   }
         // })
         // cookie.set('currentUser', response.user, {expires: 3});
-        hashHistory.push('/dashboard')
+        hashHistory.push('/places')
 
         // PLACE IS ADDED -- do something else?
       })
