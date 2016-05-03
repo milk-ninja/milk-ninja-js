@@ -82,14 +82,14 @@ export default class AddPlace extends Component {
               <h4>Describe the Area</h4>
               <input type="text" name="description" placeholder="First floor...etc"/>
             </div>
-            <div className="add-place-form">
+            {/*<div className="add-place-form">
               <h4>Latitude</h4>
               <input type="text" name="lat" placeholder="Latitude"/>
             </div>
             <div className="add-place-form">
               <h4>Longitude</h4>
               <input type="text" name="long" placeholder="Longitude"/>
-            </div>
+            </div>*/}
             {/*<div className="add-place-form">
             <h4>Cleanliness Rating</h4>
            

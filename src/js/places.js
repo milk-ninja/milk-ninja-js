@@ -36,7 +36,7 @@ export default class Places extends Component {
   render() {
     return (
       <div className="places">
-        <button onClick={clickHandler}>Show places</button>
+        <button onClick={x}>Show places</button>
       
       </div>
 
