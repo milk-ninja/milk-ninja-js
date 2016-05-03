@@ -61,6 +61,7 @@ export default class Dashboard extends Component {
             <div className="nav-links">
               <Link to={'/add_place'}><i className="fa fa-search" aria-hidden="true"/>Find A Place</Link>
               <Link to={'/add_place'}><i className="fa fa-plus-circle" aria-hidden="true"/>Add A Place</Link>
+              <Link to={'/list_view'}><i className="fa fa-list" aria-hidden="true"/>List View</Link>
             </div>
 
             <div className="official">

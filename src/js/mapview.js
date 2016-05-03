@@ -79,6 +79,18 @@ export default class MapView extends Component {
 		});
 	}
 
+  }
+
+	render() {
+		return (
+			<div className="mapview">
+				<div id="map" ref={ theActualDivElement => this.map = theActualDivElement }></div>
+			</div>
+		)
+	}
+}
+
+
 		// ajax({
 		// 	url: `https://api.foursquare.com/v2/venues/search
 		// 					?client_id=4U40TREA4FBFLA30KJMOZQ1N5JFD4GOBCP5UOAGAZ5PNOUWK
@@ -90,14 +102,3 @@ export default class MapView extends Component {
 		// 	console.log(response);
 
 		// })
-
-  }
-
-	render() {
-		return (
-			<div className="mapview">
-				<div id="map" ref={ theActualDivElement => this.map = theActualDivElement }></div>
-			</div>
-		)
-	}
-}

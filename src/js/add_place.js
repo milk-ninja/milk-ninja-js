@@ -80,7 +80,7 @@ export default class AddPlace extends Component {
               <h4>Describe the Area</h4>
               <input type="text" name="description" className="reg-input-box" placeholder="First floor...etc"/>
             </div>
-            <div className="add-place-form">
+            {/*<div className="add-place-form">
               <h4>Latitude</h4>
               <input type="text" name="lat" className="reg-input-box" placeholder="Latitude"/>
             </div>
@@ -88,7 +88,32 @@ export default class AddPlace extends Component {
               <h4>Longitude</h4>
               <input type="text" name="long" className="reg-input-box" placeholder="Longitude"/>
             </div>
-
+            </div>*/}
+            {/*<div className="add-place-form">
+            <h4>Cleanliness Rating</h4>
+           
+              <ul className="radio-button">
+                <li><label><input type="radio" className="input-circle" name="cleanliness" value="1"/>Poor</label></li>
+                <li><label><input type="radio" className="input-circle" name="cleanliness" value="2"/>Fair</label></li>
+                <li><label><input type="radio" className="input-circle" name="cleanliness" value="3"/>Average</label></li>
+                <li><label><input type="radio" className="input-circle" name="cleanliness" value="4"/>Good</label></li>
+                <li><label><input type="radio" className="input-circle" name="cleanliness" value="5"/>Excellent</label></li>
+              </ul>
+            </div>
+            <div className="add-place-form">
+            <h4>Privacy Rating</h4>
+              <ul className="radio-button">
+                <li><label><input type="radio" className="input-circle" name="privacy" value="1"/>Poor</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="2"/>Fair</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="3"/>Average</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="4"/>Good</label></li>
+                <li><label><input type="radio" className="input-circle" name="privacy" value="5"/>Excellent</label></li>
+              </ul>
+            </div>
+            <div className="add-place-form">
+              <h4>Comments</h4>
+              <textarea id="comments" name="comments"/>
+            </div>*/}
             <div className="add-btn">
               <button id="add-place-btn">Submit</button>
             </div> 
