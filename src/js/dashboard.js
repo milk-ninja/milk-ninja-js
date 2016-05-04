@@ -74,7 +74,7 @@ export default class Dashboard extends Component {
          
           <header>
 
-            <span><img src={currentUser.avatar}/> {currentUser.first_name}</span>
+            <span><img src={currentUser.avatar}/> {currentUser.username}</span>
 
             <button id="logout-btn" onClick={this.logOut}>Log Out</button>
 
