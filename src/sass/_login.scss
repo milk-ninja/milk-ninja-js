@@ -1,14 +1,16 @@
 .login {
+  // border: 0 solid orange;
+
   min-height: 100vh;
   // border: 1px solid red;
   font-size: 1.5em;
-    background: #74b7bb; /* Old browsers */
+  background: #74b7bb; /* Old browsers */
   background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
   h1 {
-    margin-top: 1em;
+    padding-top: 1em;
     margin-bottom: 1em;
     font-size: 3em;
   }

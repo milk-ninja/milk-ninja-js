@@ -11,8 +11,8 @@ export default class Home extends Component {
       <div className="home">
 
         <div className="title-image-wrapper">
-          <h1>Milk Ninja</h1>
-          <img src="./images/babyninja-300x300.png"/>
+          {/*<h1>Milk Ninja</h1>*/}
+          <img src="./images/milk_ninja_mockup.png"/>
         </div>
 
         <div className="describe-wrapper">
@@ -26,7 +26,7 @@ export default class Home extends Component {
         
         <div className="login-wrapper">  
           <p className="home-link">Returning User?</p>
-          <Link to="/login" className="login-btn" className="home-link">Login</Link>
+          <Link to="/login" id="login-btn" className="home-link">Login</Link>
         </div>
 
       </div>

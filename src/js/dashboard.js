@@ -22,50 +22,14 @@ export default class Dashboard extends Component {
           hashHistory.push('/');
      }
 
-//PLACEHOLDER STATIC MAP
-
-// componentWillMount() {
-//   var map;
-//   function initMap() {
-//     let map = new google.maps.Map(document.getElementID('map'), {
-//       center: {lat: 33.751894, lng: -84.391327},
-//       zoom: 10
-//     })
-//   }
-// }
-
-//START OF COMPONENT WILL MOUNT FUNCTION
-  // componentWillMount() {
-  //    this.setState({locationStatus: 'Pinpointing your location..'});
-
-  //    if ("geolocation" in navigator) {
-  //       navigator.geolocation.getCurrentPosition(function(position)  {
-  //         this.setState({locationStatus: 'Finding spots near you.'});
-
-  //         ajax('')
-
-  //       })
-  //    }
-
-  //   }   
-
-
-    // this.setState({locationStatus: 'Pinpointing your location..'});     // run the code that pinpoints the location
-     //      then (in the callback)
-     //      this.setState({locationStatus: 'Finding spots near you.'});
-     //      ajax -> ask the backend for spots based on location
-     //           then
-     //           show them the spots
-     //           this.setState({locationStatus: 'Found X spots near you.'});
-
 
   
   render() {
 
      let currentUser = cookie.getJSON('currentUser');
-     console.log('current user', currentUser);
-     console.log('current user name', currentUser.first_name);
-     console.log('current user avatar', currentUser.avatar)
+     // console.log('current user', currentUser);
+     // console.log('current user name', currentUser.first_name);
+     // console.log('current user avatar', currentUser.avatar);
 
 
 
@@ -97,6 +61,7 @@ export default class Dashboard extends Component {
             <div className="nav-links">
               <Link to={'/add_place'}><i className="fa fa-search" aria-hidden="true"/>Find A Place</Link>
               <Link to={'/add_place'}><i className="fa fa-plus-circle" aria-hidden="true"/>Add A Place</Link>
+              <Link to={'/list_view'}><i className="fa fa-list" aria-hidden="true"/>List View</Link>
             </div>
 
             <div className="official">
