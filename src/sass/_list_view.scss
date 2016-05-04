@@ -1,0 +1,12 @@
+
+
+.list-view{
+  li {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    span:nth-child(2) {
+      // margin: auto 2em;
+    }
+  }
+}
