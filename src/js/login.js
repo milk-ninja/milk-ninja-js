@@ -49,7 +49,7 @@ export default class Login extends Component {
 					<div>
 						<input type="password" name="password" className="reg-input-box" placeholder="password"/>
 					</div>
-					<button className="login-btn">Submit</button>
+					<button id="login-btn">Submit</button>
 				</SSF>
 			  </div>
 

@@ -6,6 +6,7 @@ import { getNearbyPlaces } from './location_service';
 import cookie from 'js-cookie';
 
 
+
 export default class ListView extends Component {
 
   constructor(...props) {
@@ -42,25 +43,29 @@ export default class ListView extends Component {
 
 //       })
 
-      getNearbyPlaces(places => {
-        this.setState({places});
-      })
+      getNearbyPlaces(data => {
+        this.setState({places: data.places});
+        // console.log(places.places[0]);
+
+              })
+    }
+    getPlace(place) {
+      // let places = places.places;
+      return(
+        <li>{place.name}</li>
+        )
     }
 
 
-
   render() {
+
+    let { places } = this.state;
+    console.log(places);
+
     return(
       <div className="list-view">
         <ul>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
+          {places.map(::this.getPlace)}
         </ul>
       </div>
 

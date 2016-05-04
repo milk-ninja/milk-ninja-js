@@ -32,7 +32,6 @@ render((
         <Route path="/list_view" component={ListView}/>
     	<Route path="/add_place" component={AddPlace}/>
     	<Route path="/privacy" component={Privacy}/>
-        <Route path="/places" component={Places}/> 
         <Route path="/ratings_comments" component={Ratings}/>
         <Route path="/detailed_view" component={DetailedView}/> 
 

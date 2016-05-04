@@ -60,13 +60,13 @@ export default class MapView extends Component {
          let lat = position.coords.latitude;
          let lng = position.coords.longitude;
 
-         console.log('this map', this.map);
+         // console.log('this map', this.map);
 
 		  // function initMap() {
 		  let map = new google.maps.Map(this.map, {
 		      // center: {lat: 33.751894, lng: -84.391327},
 		    center: {lat, lng},
-		    zoom: 16
+		    zoom: 18
 		  });
 
 		  let marker = new google.maps.Marker({
@@ -74,6 +74,7 @@ export default class MapView extends Component {
 		  	map: map,
 		  	title: "My Location"
 		  })
+
 	         // this.setState({locationStatus: 'Finding spots near you.'});
 		  // }
 		});

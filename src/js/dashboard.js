@@ -27,9 +27,9 @@ export default class Dashboard extends Component {
   render() {
 
      let currentUser = cookie.getJSON('currentUser');
-     console.log('current user', currentUser);
-     console.log('current user name', currentUser.first_name);
-     console.log('current user avatar', currentUser.avatar)
+     // console.log('current user', currentUser);
+     // console.log('current user name', currentUser.first_name);
+     // console.log('current user avatar', currentUser.avatar);
 
 
 

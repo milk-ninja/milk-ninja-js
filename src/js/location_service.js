@@ -50,6 +50,6 @@ export function getNearbyPlaces(callback) {
 
 }
 
-getNearbyPlaces(places => {
-  console.log('places', places);
-});
+// getNearbyPlaces(places => {
+  // console.log('places', places);
+// });
