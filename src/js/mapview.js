@@ -59,10 +59,16 @@ export default class MapView extends Component {
 
          let lat = position.coords.latitude;
          let lng = position.coords.longitude;
+         let lat1 = '33.75';
+         let lng1 = '-84.385';
+         console.log (lat, lng);
+
 
          // console.log('this map', this.map);
 
 		  // function initMap() {
+      let myLatlng = new google.maps.LatLng(33.752, -84.3915);
+      console.log(myLatlng);
 		  let map = new google.maps.Map(this.map, {
 		      // center: {lat: 33.751894, lng: -84.391327},
 		    center: {lat, lng},
@@ -75,9 +81,34 @@ export default class MapView extends Component {
 		  	title: "My Location"
 		  })
 
+      marker = new google.maps.Marker({
+        position: myLatlng,
+        // position: {33.752, -84.3915},
+        map: map,
+        title: "My Next Location"
+      })
+
+      // function (data) {
+      //   let myLatlng = new google.maps.LatLng(data.lat, data.lng);
+      //   marker = new google.maps.Marker({
+      //     position: myLatlng,
+      //     map: map,
+      //     title: data.title
+      //   })
+      // }
+
+      // let marker1 = new google.maps.Marker({
+      //   position: {lat1, lng1},
+      //   map: map,
+      //   title: "My Next Location"
+      // })
+
 	         // this.setState({locationStatus: 'Finding spots near you.'});
 		  // }
+      // marker1.setMap(map);
+
 		});
+
 	}
 
   }
