@@ -42,7 +42,7 @@ export default class AddPlace extends Component {
     ajax({
       url:'https://mighty-spire-68004.herokuapp.com/places',
       type: 'POST',
-      data: data,
+      data: newPlace,
       cached: false,
       dataType: 'json', 
       processData: false,
