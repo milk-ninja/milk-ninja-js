@@ -10,8 +10,16 @@ export default class AddPlace extends Component {
 
     constructor() {
       super();
-
+      this.state = {
+        preview: './images/picture-placeholder.png'
+      }
     }
+
+    dropHandler([file]) {
+      console.log([file]);
+      this.setState({preview: file.preview});
+      this.file = file;
+  } 
 
     dataHandler(data) {
 
@@ -24,15 +32,21 @@ export default class AddPlace extends Component {
     newPlace.append('state', data.state);
     newPlace.append('zip', data.zip);
     newPlace.append('description', data.description);
-    newPlace.append('lat', data.lat);
-    newPlace.append('long', data.long);
+    newPlace.append('privacy', data.privacy);
+    newPlace.append('cleanliness', data.cleanliness);
+    newPlace.append('comment', data.comment);
+    newPlace.append('image', this.file);
+    // newPlace.append('lat', data.lat);
+    // newPlace.append('long', data.long);
 
     ajax({
       url:'https://mighty-spire-68004.herokuapp.com/places',
       type: 'POST',
       data: data,
       cached: false,
-      dataType: 'json',   
+      dataType: 'json', 
+      processData: false,
+      contentType: false,   
     }).then((response) => {
 
         // console.log('response', response)
@@ -43,7 +57,7 @@ export default class AddPlace extends Component {
         //   }
         // })
         // cookie.set('currentUser', response.user, {expires: 3});
-        hashHistory.push('/places')
+        hashHistory.push('/list_view')
 
         // PLACE IS ADDED -- do something else?
       })
@@ -80,40 +94,41 @@ export default class AddPlace extends Component {
               <h4>Describe the Area</h4>
               <input type="text" name="description" className="reg-input-box" placeholder="First floor...etc"/>
             </div>
-            {/*<div className="add-place-form">
-              <h4>Latitude</h4>
-              <input type="text" name="lat" className="reg-input-box" placeholder="Latitude"/>
-            </div>
+            
             <div className="add-place-form">
-              <h4>Longitude</h4>
-              <input type="text" name="long" className="reg-input-box" placeholder="Longitude"/>
-            </div>
-            </div>*/}
-            {/*<div className="add-place-form">
-            <h4>Cleanliness Rating</h4>
+              <h4>Privacy Rating</h4>
+                <ul className="radio-button">
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="1"/>Poor</label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="2"/>Fair</label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="3"/>Average</label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="4"/>Good</label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="5"/>Excellent</label></li>
+                </ul>
+            </div>            
+
+            <div className="add-place-form">
+              <h4>Cleanliness Rating</h4>
            
-              <ul className="radio-button">
-                <li><label><input type="radio" className="input-circle" name="cleanliness" value="1"/>Poor</label></li>
-                <li><label><input type="radio" className="input-circle" name="cleanliness" value="2"/>Fair</label></li>
-                <li><label><input type="radio" className="input-circle" name="cleanliness" value="3"/>Average</label></li>
-                <li><label><input type="radio" className="input-circle" name="cleanliness" value="4"/>Good</label></li>
-                <li><label><input type="radio" className="input-circle" name="cleanliness" value="5"/>Excellent</label></li>
-              </ul>
+                <ul className="radio-button">
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="1"/>Poor</label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="2"/>Fair</label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="3"/>Average</label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="4"/>Good</label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="5"/>Excellent</label></li>
+                </ul>
             </div>
+            
+
             <div className="add-place-form">
-            <h4>Privacy Rating</h4>
-              <ul className="radio-button">
-                <li><label><input type="radio" className="input-circle" name="privacy" value="1"/>Poor</label></li>
-                <li><label><input type="radio" className="input-circle" name="privacy" value="2"/>Fair</label></li>
-                <li><label><input type="radio" className="input-circle" name="privacy" value="3"/>Average</label></li>
-                <li><label><input type="radio" className="input-circle" name="privacy" value="4"/>Good</label></li>
-                <li><label><input type="radio" className="input-circle" name="privacy" value="5"/>Excellent</label></li>
-              </ul>
+              <textarea id="comments" name="comment" placeholder="Start your review..."/>
             </div>
-            <div className="add-place-form">
-              <h4>Comments</h4>
-              <textarea id="comments" name="comments"/>
-            </div>*/}
+            <div className="add-place-dropbox">
+              <DropZone onDrop={::this.dropHandler} className="add-place-dropbox">
+                <span>Add a picture . . .</span>   
+                <input type="hidden" name="image" value={this.state.preview}/>
+                <img className="place-picture" src={this.state.preview}/>
+              </DropZone>
+            </div>
             <div className="add-btn">
               <button id="add-place-btn">Submit</button>
             </div> 

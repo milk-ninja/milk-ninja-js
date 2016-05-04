@@ -11,7 +11,7 @@ import AddPlace   from './add_place';
 import Privacy   from './privacy';
 import MapView   from './mapview';
 import Places   from './places';
-import Ratings from './ratings_comments';
+// import Ratings from './ratings_comments';
 import ListView   from './list_view';
 import DetailedView   from './detailed_view';
 
@@ -34,7 +34,7 @@ render((
     	<Route path="/add_place" component={AddPlace}/>
     	<Route path="/privacy" component={Privacy}/>
         <Route path="/places" component={Places}/> 
-        <Route path="/ratings_comments" component={Ratings}/> 
+        {/*} <Route path="/ratings_comments" component={Ratings}/>*/} 
 
     </Route>    
   </Router>
