@@ -12,9 +12,9 @@ export function getCurrentLocation(callback) {
      navigator.geolocation.getCurrentPosition(position => {
 
        let lat = position.coords.latitude;
-       let long = position.coords.longitude;
+       let lng = position.coords.longitude;
 
-       location = { lat, long };
+       location = { lat, lng };
        callback(location);
      });
 

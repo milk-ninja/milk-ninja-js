@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { Link } from 'react-router';
 import { ajax } from 'jquery';
 import { getNearbyPlaces } from './location_service';
 
