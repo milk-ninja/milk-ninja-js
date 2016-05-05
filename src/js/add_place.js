@@ -49,7 +49,7 @@ export default class AddPlace extends Component {
       contentType: false,   
     }).then((response) => {
 
-        // console.log('response', response)
+        console.log('response', response)
 
         // ajaxSetup({
         //   headers: {

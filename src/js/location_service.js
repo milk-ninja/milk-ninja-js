@@ -12,9 +12,9 @@ export function getCurrentLocation(callback) {
      navigator.geolocation.getCurrentPosition(position => {
 
        let lat = position.coords.latitude;
-       let long = position.coords.longitude;
+       let lng = position.coords.longitude;
 
-       location = { lat, long };
+       location = { lat, lng };
        callback(location);
      });
 
@@ -31,9 +31,13 @@ let nearbyPlaces = null;
 
 export function getNearbyPlaces(callback) {
 
+  console.log('A');
+
   if (nearbyPlaces) {
+    console.log('B');
     callback(nearbyPlaces);
   } else {  
+    console.log('C')
     getCurrentLocation(coords => {
       ajax({
         url:`https://mighty-spire-68004.herokuapp.com/places/find_nearby`,
@@ -42,8 +46,11 @@ export function getNearbyPlaces(callback) {
         cached: false,
         dataType: 'json',   
       }).then(results => {
+        console.log('D', results);
         nearbyPlaces = results;
         callback(nearbyPlaces);
+      }).fail((error) => {
+        console.log('error', error);
       })
     })
   }
