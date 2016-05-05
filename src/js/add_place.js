@@ -35,7 +35,7 @@ export default class AddPlace extends Component {
     newPlace.append('privacy', data.privacy);
     newPlace.append('cleanliness', data.cleanliness);
     newPlace.append('comment', data.comment);
-    newPlace.append('image', this.file);
+    newPlace.append('avatar', this.file);
     // newPlace.append('lat', data.lat);
     // newPlace.append('long', data.long);
 
@@ -125,7 +125,7 @@ export default class AddPlace extends Component {
             <div className="add-place-dropbox">
               <DropZone onDrop={::this.dropHandler} className="add-place-dropbox">
                 <span>Add a picture . . .</span>   
-                <input type="hidden" name="image" value={this.state.preview}/>
+                <input type="hidden" name="avatar" value={this.state.preview}/>
                 <img className="place-picture" src={this.state.preview}/>
               </DropZone>
             </div>
