@@ -52,7 +52,7 @@ export default class ListView extends Component {
     getPlace(place) {
       let placeImage = place.image_url ? track.image_url : './images/milk_ninja_baby_head.png';
       return(
-        <li key={place.id}><span><img src={placeImage}/></span><span>{place.name}</span></li>
+        <Link to={`/places/${place.id}`}><li key={place.id}><span><img src={placeImage}/></span><span>{place.name}</span></li></Link>
         )
     }
 
