@@ -28,9 +28,11 @@ export default class DetailedView extends Component {
 
   listRatings(rating_info) {
     return(
-
-      <li>Privacy: {rating_info.privacy} Cleanliness: {rating_info.cleanliness} Comments: {rating_info.comment} </li>
-
+      <ul>
+      <li>Privacy: {rating_info.privacy}</li> 
+      <li> Cleanliness: {rating_info.cleanliness} </li> 
+      <li>  Comments: {rating_info.comment} </li>
+      </ul>
     )
   }
 
@@ -54,15 +56,16 @@ export default class DetailedView extends Component {
 
         <ul className="detail_individual">
           <li className="place-name"> { place_information.place.name} </li>
-          <li> { place_information.place.full_address } </li>          
+          <li className="place-address"> { place_information.place.full_address } </li>          
           <li> <img src={ place_information.place.avatar} id="detail-img"/> </li>
-          <li> Description: { place_information.place.description } </li>
+          <li> Description: "{ place_information.place.description }" </li>
 
         </ul>
 
-        <ul className="detail_individual">
+        <div className="detail_ratings">
+            <span className="ratings-header">Ratings & Comments: </span>
             {place_information.ratings.map(::this.listRatings)}
-        </ul>
+        </div>
 
       </div>
 
