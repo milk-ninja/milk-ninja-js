@@ -1,13 +1,15 @@
 
 .detailed-view {
 	background-color: #74b7bb;
+	height: 1500px;
+	overflow: scroll;
 }
 
 
 .detail_individual {
 
 	li {
-		font-size: 2.5em;
+		font-size: 1.5em;
 		text-align: center;
 		margin-bottom: .75em;
 	}
@@ -17,11 +19,27 @@
 		margin-bottom: .25em;
 		text-align: center;
 	}
+	.place-address {
+		font-size: 1.5em;
+	}
 	#detail-img {
 		height: 40vh;
 		width: auto;
-		border: .5px solid #0E2234;
+		border: 1px solid #0E2234;
 
 	}
+
 }
 
+.detail_ratings {
+	text-align: center;
+}
+
+.ratings-header {
+	font-size: 3.5em;
+	font-weight: bold;
+	margin-bottom: .25em;
+	display: block;
+	width: 100vw;
+	text-align: center;
+}
