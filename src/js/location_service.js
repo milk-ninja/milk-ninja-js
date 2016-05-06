@@ -33,7 +33,7 @@ export function getNearbyPlaces(callback) {
 
   console.log('A');
 
-  if (nearbyPlaces) {
+  if (false) {
     console.log('B');
     callback(nearbyPlaces);
   } else {  
