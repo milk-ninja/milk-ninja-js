@@ -46,12 +46,12 @@ export default class ListView extends Component {
 
       getNearbyPlaces(data => {
         this.setState({places: data.places});
-        // console.log(places.places[0]);
+        // console.log(places);
 
               })
     }
     getPlace(place) {
-      let placeImage = place.image_url ? track.image_url : './images/milk_ninja_baby_head.png';
+      let placeImage = place.avatar_url ? place.avatar_url : './images/ninja_head.png';
       return(
         <Link to={`/places/${place.id}`}><li key={place.id}><span><img src={placeImage}/></span><span>{place.name}</span></li></Link>
         )

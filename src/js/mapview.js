@@ -63,6 +63,7 @@ export default class MapView extends Component {
     new google.maps.Marker({
       position: coords,
       map: this.map,
+      icon: './images/ninja_head.png',
       title: "My Location"
     })
   }
