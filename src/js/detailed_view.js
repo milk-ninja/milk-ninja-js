@@ -67,20 +67,21 @@ export default class DetailedView extends Component {
             {place_information.ratings.map(::this.listRatings)}
         </div>
 
+        
       </div>
 
       )
   }
 
-  renderLoading() {
-    return (
-      <h1> Loading... </h1>
-    )
-  }
+  // renderLoading() {
+  //   return (
+  //     <h1> Loading... </h1>
+  //   )
+  // }
 
-  loading() {
-    let { loading } = this.state;
-    loading ? this.render() : this.renderLoading()
-  }
+  // loading() {
+  //   let { loading } = this.state;
+  //   loading ? this.render() : this.renderLoading()
+  // }
 
 }
