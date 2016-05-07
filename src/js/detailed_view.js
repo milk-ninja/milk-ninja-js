@@ -68,9 +68,11 @@ export default class DetailedView extends Component {
             {place_information.ratings.map(::this.listRatings)}
         </div>
 
+
         <div>
           <Link to="https://www.google.com/maps/dir/"> Get Directions </Link>
         </div>
+
 
       </div>
 
@@ -79,5 +81,15 @@ export default class DetailedView extends Component {
 }
 
 
+
+  // renderLoading() {
+  //   return (
+  //     <h1> Loading... </h1>
+  //   )
+  // }
+
+  // loading() {
+  //   let { loading } = this.state;
+  //   loading ? this.render() : this.renderLoading()
 
 
