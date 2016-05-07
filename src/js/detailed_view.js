@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import { ajax } from 'jquery';
 
 export default class DetailedView extends Component {
@@ -63,24 +64,20 @@ export default class DetailedView extends Component {
         </ul>
 
         <div className="detail_ratings">
-            <span className="ratings-header">Ratings & Comments: </span>
+          <span className="ratings-header">Ratings & Comments: </span>
             {place_information.ratings.map(::this.listRatings)}
+        </div>
+
+        <div>
+          <Link to="https://www.google.com/maps/dir/"> Get Directions </Link>
         </div>
 
       </div>
 
       )
   }
-
-  renderLoading() {
-    return (
-      <h1> Loading... </h1>
-    )
-  }
-
-  loading() {
-    let { loading } = this.state;
-    loading ? this.render() : this.renderLoading()
-  }
-
 }
+
+
+
+
