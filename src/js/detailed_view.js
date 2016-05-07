@@ -69,8 +69,8 @@ export default class DetailedView extends Component {
         </div>
 
 
-        <div>
-          <Link to="https://www.google.com/maps/dir/"> Get Directions </Link>
+        <div className="link_to_directions">
+          <a href="https://www.google.com/maps/dir/"> Get Directions </a>
         </div>
 
 
