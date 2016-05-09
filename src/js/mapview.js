@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { $, ajax } from 'jquery';
 
+import { getNearbyPlaces } from './location_service';
+
+
 
 /*post_id: null,*/ 
 export default class MapView extends Component {
@@ -49,6 +52,21 @@ export default class MapView extends Component {
 // }
 
 
+  makeMap(center) {
+    this.map = new google.maps.Map(this.map, {
+      center: center,
+      zoom: 18
+    });
+  }
+
+  addMarker(coords) {
+    new google.maps.Marker({
+      position: coords,
+      map: this.map,
+      icon: './images/ninja_head.png',
+      title: "My Location"
+    })
+  }
 	
   componentDidMount() {
 
@@ -59,34 +77,56 @@ export default class MapView extends Component {
 
          let lat = position.coords.latitude;
          let lng = position.coords.longitude;
-         let lat1 = '33.75';
-         let lng1 = '-84.385';
-         console.log (lat, lng);
+
+
+         this.makeMap({lat, lng});
+
+         this.addMarker({lat, lng});
+
+         getNearbyPlaces(data => {
+          console.log('iterating places', data.places);
+          data.places.forEach(place => {
+            console.log('adding place', place);
+            this.addMarker({lat: place.lat, lng: place.lng});
+          })
+         })
+
+
+         // for (var i = 0; i < 50; i ++) {
+         //  let x = lat + Math.random() - 0.5;
+         //  let y = lng + Math.random() - 0.5;
+         //  this.addMarker({lat: x, lng: y});
+         // }
+
+
+         // let lat1 = '33.75';
+         // let lng1 = '-84.385';
+         // console.log (lat, lng);
 
 
          // console.log('this map', this.map);
 
 		  // function initMap() {
-      let myLatlng = new google.maps.LatLng(33.752, -84.3915);
-      console.log(myLatlng);
-		  let map = new google.maps.Map(this.map, {
-		      // center: {lat: 33.751894, lng: -84.391327},
-		    center: {lat, lng},
-		    zoom: 18
-		  });
+    //   let myLatlng = new google.maps.LatLng(33.752, -84.3915);
+    //   console.log(myLatlng);
+		  // let map = new google.maps.Map(this.map, {
+		  //     // center: {lat: 33.751894, lng: -84.391327},
+		  //   center: {lat, lng},
+		  //   zoom: 18
+		  // });
 
-		  let marker = new google.maps.Marker({
-		  	position: {lat, lng},
-		  	map: map,
-		  	title: "My Location"
-		  })
+		  // let marker = new google.maps.Marker({
+		  // 	position: {lat, lng},
+		  // 	map: map,
+		  // 	title: "My Location"
+		  // })
 
-      marker = new google.maps.Marker({
-        position: myLatlng,
-        // position: {33.752, -84.3915},
-        map: map,
-        title: "My Next Location"
-      })
+      // marker = new google.maps.Marker({
+      //   position: myLatlng,
+      //   // position: {33.752, -84.3915},
+      //   map: map,
+      //   title: "My Next Location"
+      // })
 
       // function (data) {
       //   let myLatlng = new google.maps.LatLng(data.lat, data.lng);

@@ -35,7 +35,7 @@ export default class AddPlace extends Component {
     newPlace.append('privacy', data.privacy);
     newPlace.append('cleanliness', data.cleanliness);
     newPlace.append('comment', data.comment);
-    newPlace.append('image', this.file);
+    newPlace.append('avatar', this.file);
     // newPlace.append('lat', data.lat);
     // newPlace.append('long', data.long);
 
@@ -49,7 +49,7 @@ export default class AddPlace extends Component {
       contentType: false,   
     }).then((response) => {
 
-        // console.log('response', response)
+        console.log('response', response)
 
         // ajaxSetup({
         //   headers: {
@@ -68,7 +68,7 @@ export default class AddPlace extends Component {
         
         <div className="add-place">
         <h1>Add A New Place...</h1>
-        <span>to help others feed their baby in a quiet place.</span>
+        <span>Share your secrets with other moms & their ninjas!</span>
           <SSF onData={::this.dataHandler}>
             <div className="add-place-form">
               <h4>Name of Place</h4>
@@ -125,7 +125,7 @@ export default class AddPlace extends Component {
             <div className="add-place-dropbox">
               <DropZone onDrop={::this.dropHandler} className="add-place-dropbox">
                 <span>Add a picture . . .</span>   
-                <input type="hidden" name="image" value={this.state.preview}/>
+                <input type="hidden" name="avatar" value={this.state.preview}/>
                 <img className="place-picture" src={this.state.preview}/>
               </DropZone>
             </div>
