@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Link, hashHistory } from 'react-router';
-import { agax } from 'jquery';
 import cookie from 'js-cookie';
 
 // import Icon from 'font-awesome';

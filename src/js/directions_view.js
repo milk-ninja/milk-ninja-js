@@ -9,7 +9,7 @@ export default class DirectionsView extends Component {
   }
 
 
-  showDirectionsMap(center) {
+  initMap(center) {
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService; 
 
@@ -62,7 +62,18 @@ export default class DirectionsView extends Component {
 
     return (
       <div className="direcions-view">
+        <div id="floating-panel">
+          <b>Mode of Travel: </b>
+          <select id="mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+          </select>
+        </div>
+
         <div id="directions-map" ref={ theDivElement => this.map = theDivElement }>
+
         </div>
       </div>
 

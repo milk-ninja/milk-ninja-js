@@ -16,12 +16,6 @@ import DetailedView   from './detailed_view';
 import DirectionsView from './directions_view';
 
 
-
-
-
-
-
-
 render((
   <Router history={hashHistory}>
     <Route path="/" component={Home}/>
@@ -34,7 +28,7 @@ render((
     	<Route path="/add_place" component={AddPlace}/>
     	<Route path="/privacy" component={Privacy}/>
         <Route path="/places/:id" component={DetailedView}/>
-        <Route path="/directions_view/:id" component={DirectionsView}/>
+        <Route path="/directions_view" component={DirectionsView}/>
 
 
     </Route>    

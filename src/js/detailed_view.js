@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 import { ajax } from 'jquery';
 
 export default class DetailedView extends Component {
@@ -70,7 +70,8 @@ export default class DetailedView extends Component {
 
 
         <div className="google-directions">
-          <Link to={DirectionsView}>Get Directions</Link> 
+          {/*<Link to='/directions_view'>Get Directions</Link>*/}
+          <a href="http://www.google.com/maps/dir">Directions To Here</a>
         </div>
       </div>
 
