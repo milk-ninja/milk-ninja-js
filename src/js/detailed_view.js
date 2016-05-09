@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import { ajax } from 'jquery';
 
 export default class DetailedView extends Component {
@@ -56,35 +57,42 @@ export default class DetailedView extends Component {
 
         <ul className="detail_individual">
           <li className="place-name"> { place_information.place.name} </li>
-          <li className="place-address"> { place_information.place.full_address } </li>          
+          <li className="place-address">{ place_information.place.full_address } </li>          
           <li> <img src={ place_information.place.avatar} id="detail-img"/> </li>
           <li> Description: "{ place_information.place.description }" </li>
 
         </ul>
 
         <div className="detail_ratings">
-            <span className="ratings-header">Ratings & Comments: </span>
+          <span className="ratings-header">Ratings & Comments: </span>
             {place_information.ratings.map(::this.listRatings)}
         </div>
 
+<<<<<<< HEAD
         <div className="google-directions">
           <Link to={DirectionsView}>Get Directions</Link> 
         </div>
+=======
+
+
+>>>>>>> b1387b1531131ca36e896a26c69d12505d9738be
 
       </div>
 
       )
   }
-
-  renderLoading() {
-    return (
-      <h1> Loading... </h1>
-    )
-  }
-
-  loading() {
-    let { loading } = this.state;
-    loading ? this.render() : this.renderLoading()
-  }
-
 }
+
+
+
+  // renderLoading() {
+  //   return (
+  //     <h1> Loading... </h1>
+  //   )
+  // }
+
+  // loading() {
+  //   let { loading } = this.state;
+  //   loading ? this.render() : this.renderLoading()
+
+
