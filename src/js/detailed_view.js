@@ -68,15 +68,10 @@ export default class DetailedView extends Component {
             {place_information.ratings.map(::this.listRatings)}
         </div>
 
-<<<<<<< HEAD
+
         <div className="google-directions">
           <Link to={DirectionsView}>Get Directions</Link> 
         </div>
-=======
-
-
->>>>>>> b1387b1531131ca36e896a26c69d12505d9738be
-
       </div>
 
       )
