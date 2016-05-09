@@ -156,7 +156,9 @@ export default class MapView extends Component {
 	render() {
 		return (
 			<div className="mapview">
+
 				<div id="map" ref={ theActualDivElement => this.map = theActualDivElement }></div>
+
 			</div>
 		)
 	}
