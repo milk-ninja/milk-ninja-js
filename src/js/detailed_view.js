@@ -69,9 +69,6 @@ export default class DetailedView extends Component {
         </div>
 
 
-        <div className="link_to_directions">
-          <a href="https://www.google.com/maps/dir/"> GET DIRECTIONS </a>
-        </div>
 
 
       </div>
