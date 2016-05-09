@@ -1,7 +1,3 @@
-/* CSS Entry Point */
-// 1650px 1740px; App Width on mals computer
-
-// Turn on freq used libraries
 @import 'normalize-css/normalize';
 @import 'font-awesome/scss/font-awesome';
 @import 'add_place';
@@ -13,7 +9,7 @@
 @import 'detailed_view';
 @import 'directions';
 
-$font-stack:    Helvetica, sans-serif;
+$font-stack: 'Basic', Helvetica, sans-serif;
 
 $app-black: #04050A;
 $app-drk-blue: #0E2234;
@@ -28,11 +24,8 @@ $app-red: #BA0D12;
   padding: 0;
   box-sizing: border-box;
   color: black;
+  font-family: $font-stack;
 }
-
-// body {
-  // border: 3px solid orange;
-// }
 
 html, body { 
   height: 100vh; 
@@ -42,16 +35,12 @@ html, body {
 .app {
   max-width: 100%;
   min-height: 100%;
-  // border: 3px solid orange;
 }
 
-
-
 .home {
-  // border: 3px solid orange;
-
   max-width: 100vw;
   height: 100vh;
+
   //GRADIENT BACKGROUND IN APP BLUES
   background: #74b7bb; /* Old browsers */
   background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
@@ -119,40 +108,42 @@ p {
 }
 
 
-.register-btn, #login-btn, #add-place-btn, #logout-btn {
-
-   border-top: 1px solid #9db2bf;
-   background: #5a8db0;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
-   background: -webkit-linear-gradient(top, #3e779d, #5a8db0);
-   background: -moz-linear-gradient(top, #3e779d, #5a8db0);
-   background: -ms-linear-gradient(top, #3e779d, #5a8db0);
-   background: -o-linear-gradient(top, #3e779d, #5a8db0);
-   padding: 8px 16px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   border-radius: 10px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 4em;
-   font-family: Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   margin: 5px 5px;
-   
-.register-btn:hover, .login-btn:hover, #add-place-btn {
-   border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
-   }
-}
+#register-btn, #login-btn, #add-place-btn, #logout-btn {
+  border-top: 1px solid #9db2bf;
+  background: #5a8db0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
+  background: -webkit-linear-gradient(top, #3e779d, #5a8db0);
+  background: -moz-linear-gradient(top, #3e779d, #5a8db0);
+  background: -ms-linear-gradient(top, #3e779d, #5a8db0);
+  background: -o-linear-gradient(top, #3e779d, #5a8db0);
+  padding: 8px 16px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 4em;
+  font-family: $font-stack;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 5px 5px;
+  
+ }  
+// .register-btn:hover, .login-btn:hover, #add-place-btn {
+//    border-top-color: #28597a;
+//    background: #28597a;
+//    color: #ccc;
+//    }
+// }
 
 #add-place-btn {
   margin-left: 80%;
 }
+
+
 
 
 
