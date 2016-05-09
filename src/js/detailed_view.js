@@ -57,7 +57,7 @@ export default class DetailedView extends Component {
 
         <ul className="detail_individual">
           <li className="place-name"> { place_information.place.name} </li>
-          <li className="place-address"> { place_information.place.full_address } </li>          
+          <li className="place-address">{ place_information.place.full_address } </li>          
           <li> <img src={ place_information.place.avatar} id="detail-img"/> </li>
           <li> Description: "{ place_information.place.description }" </li>
 
@@ -70,7 +70,7 @@ export default class DetailedView extends Component {
 
 
         <div className="link_to_directions">
-          <a href="https://www.google.com/maps/dir/"> Get Directions </a>
+          <a href="https://www.google.com/maps/dir/"> GET DIRECTIONS </a>
         </div>
 
 
