@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Link, hashHistory } from 'react-router';
-import { agax } from 'jquery';
 import cookie from 'js-cookie';
 
 // import Icon from 'font-awesome';
@@ -38,7 +37,7 @@ export default class Dashboard extends Component {
          
           <header>
 
-            <span><img src={currentUser.avatar}/> {currentUser.first_name}</span>
+            <span><img src={currentUser.avatar}/> {currentUser.username}</span>
 
             <button id="logout-btn" onClick={this.logOut}>Log Out</button>
 
