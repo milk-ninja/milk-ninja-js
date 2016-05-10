@@ -47,11 +47,11 @@ export default class Login extends Component {
 			  	</div>
 				{/*<h1>Login</h1>*/}
 				<SSF onData={this.dataHandler}>
-					<div>
-						<input type="text" name="username" className="reg-input-box1" placeholder="Username"/>
+					<div className="login-div">
+						<input type="text" name="username" className="login-input-box1" placeholder="Username"/>
 					</div>
-					<div>
-						<input type="password" name="password" className="reg-input-box2" placeholder="Password"/>
+					<div className="login-div">
+						<input type="password" name="password" className="login-input-box2" placeholder="Password"/>
 					</div>
 					<button id="login-btn">Log In</button>
 				</SSF>
