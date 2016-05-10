@@ -3,7 +3,7 @@
 .add-place {
   height: 1500px;
   width: 100vw;
-  font-size: 1.5em;
+  // font-size: 2em;
 
 
   background: #74b7bb; /* Old browsers */
@@ -21,6 +21,7 @@
     margin-bottom: .5em;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+    // font-size: 2em;
 
   }
   span {
@@ -79,13 +80,13 @@ border-radius: 50%;
 }
 
 .add-place-form {
-  margin: 1em;
+  // margin: 1em;
 
-  h4 {
-    margin-bottom: .5em;
-    font-size: 1.5em;
-    color: white;
-  }
+  // h4 {
+  //   margin-bottom: .5em;
+  //   font-size: 1.5em;
+  //   color: white;
+  // }
   textarea {
     min-width: 90%;
     height: 40vh;
@@ -96,9 +97,9 @@ border-radius: 50%;
     border: .25px solid black;
     border-radius: 8px;
     padding: .5em;
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     overflow: scroll;
   }
 }

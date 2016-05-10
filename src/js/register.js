@@ -10,7 +10,7 @@ export default class Register extends Component {
 	constructor() {
 		super();
 		this.state = {
-			preview: './images/profile-placeholder.png'
+			preview: './images/milk_ninja_baby.png'
 		}
 	}
 
@@ -60,11 +60,21 @@ export default class Register extends Component {
 	render() {
 		return (
 			<div className="register">
-			  <h1>Registration</h1>
+				<div>
+			  		<img src="./images/milk_ninja_mockup.png" className="ninja-baby-single-reg" width="250"/>
+			  	</div>
+			  {/*<h1>Registration</h1>*/}
 				<SSF onData={::this.dataHandler}>
-					
+					<div className="picture">
+						<Dropzone onDrop={::this.dropHandler} id="dropzone">
+							{/*<span id="profile-pic-id">Update Profile Picture</span>	*/}	
+							<input className="profile-picture" type="hidden" name="avatar" value={this.state.preview}/>
+							<img className="profile-picture" src={this.state.preview} alt="Update Profile Picture"/>
+				
+						</Dropzone>
+					</div>
 					<div className="register-input">
-						<input type="text" name="first_name" className="reg-input-box" placeholder="First Name"/>
+						<input type="text" name="first_name" className="reg-input-box1" placeholder="First Name"/>
 					</div>
 					<div className="register-input">
 						<input type="text" name="last_name" className="reg-input-box" placeholder="Last Name"/>
@@ -79,17 +89,10 @@ export default class Register extends Component {
 						<input type="password" name="password" className="reg-input-box" placeholder="Enter a Password"/>
 					</div>
 					<div className="register-input">
-						<input type="text" name="zipcode" className="reg-input-box" placeholder="Enter Your Zip Code"/>
+						<input type="text" name="zipcode" className="reg-input-box2" placeholder="Enter Your Zip Code"/>
 					</div>
 
-					<div className="picture">
-						<Dropzone onDrop={::this.dropHandler} id="dropzone">
-							<span>Update Profile Picture</span>		
-							<input type="hidden" name="avatar" value={this.state.preview}/>
-							<img className="profile-picture" src={this.state.preview}/>
-				
-						</Dropzone>
-					</div>
+
 					<br/>
 					<button id="reg-btn" className="register-btn">Submit</button>
 				</SSF>

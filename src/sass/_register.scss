@@ -4,17 +4,17 @@
 .register {
   min-height: 100vh;
   // border: 1px solid red;
-  font-size: 1.5em;
+  // font-size: 1em;
     background: #74b7bb; /* Old browsers */
   background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
-  h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-size: 3em;
-  }
+  // h1 {
+  //   padding-top: 1em;
+  //   padding-bottom: 1em;
+  //   font-size: 3em;
+  // }
 }
 
 img.ninja-baby-single {
@@ -27,15 +27,26 @@ img.ninja-baby-single {
 
 }
 
+img.ninja-baby-single-reg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+}
+
 .register-input {
-  padding-left: 1em;
-  margin-bottom: 2em;
+  padding-left: 3em;
+  // margin-bottom: 2em;
+    min-width: 95%;
 }	
+
 
 .reg-input-box1 {
     margin-right: .5em;
     margin-left: .5em;
-    font-size: 3em;
+    font-size: 2.5em;
     min-width: 90%;
     height: 8vh;
     border-top-right-radius: 10px;
@@ -53,11 +64,11 @@ img.ninja-baby-single {
 .reg-input-box2 {
     margin-right: .5em;
     margin-left: .5em;
-    font-size: 3em;
+    font-size: 2.5em;
     min-width: 90%;
     height: 8vh;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border: .25px solid #ccc;
     // border-radius: 8px;
     padding: .5em;
@@ -66,7 +77,19 @@ img.ninja-baby-single {
     // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
    }
 
+.reg-input-box {
+  margin-right: .5em;
+  margin-left: .5em;
+  font-size: 2.5em;
+  min-width: 90%;
+  height: 8vh;
+  padding: .5em;
+  // border-top-right-radius: 10px;
+  // border-top-left-radius: 10px;
+  vertical-align: center;
 
+  border: .25px solid #ccc;
+}
 
 #dropzone {
   margin-left: 0;
@@ -78,21 +101,28 @@ img.ninja-baby-single {
 }
 
 .picture {
-  width: 50vw;
+  width: 30vw;
+  height: 20vh;
   margin-left: auto;
   margin-right: auto;
   // border: 1px solid red;
   position: relative;
-
+  background-color: $app-white;
+  // border: 1px solid blue;
+  margin-bottom: 2em;
 }
 
 img.profile-picture {
-  width: 50vw;
-  margin: auto;
+  width: 25vw;
+  // margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   display: block;
+
+  // border: 1px solid red;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 form {
