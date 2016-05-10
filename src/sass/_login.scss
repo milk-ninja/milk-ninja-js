@@ -17,11 +17,16 @@
   // }
 }
 
+.login-form {
+  height: 30vh;
+  overflow: hidden;
+}
+
 img.ninja-baby-single {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25vh;
+  padding-top: 20vh;
   padding-bottom: 15vh;
   
 
@@ -31,9 +36,10 @@ img.ninja-baby-single {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5vh;
   height: 30vh;
   color: $app-white;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   // position: absolute;
   // left: 25vw;
@@ -64,7 +70,7 @@ img.ninja-baby-single {
     // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
    }
 
-   .login-input-box2 {
+.login-input-box2 {
     // margin-right: .5em;
     // margin-left: .5em;
     margin-bottom: 2vh;

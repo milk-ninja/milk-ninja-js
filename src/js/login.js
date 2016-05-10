@@ -43,10 +43,10 @@ export default class Login extends Component {
 			  <div>	
 
 			  	<div>
-			  		<img src="./images/milk_ninja_baby.png" className="ninja-baby-single" width="100"/>
+			  		<img src="./images/milk_ninja_baby.png" className="ninja-baby-single" width="150"/>
 			  	</div>
 				{/*<h1>Login</h1>*/}
-				<SSF onData={this.dataHandler}>
+				<SSF onData={this.dataHandler} className="login-form">
 					<div className="login-div">
 						<input type="text" name="username" className="login-input-box1" placeholder="Username"/>
 					</div>
