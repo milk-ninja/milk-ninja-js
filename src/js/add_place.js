@@ -68,7 +68,7 @@ export default class AddPlace extends Component {
         
         <div className="add-place">
         <h1>Add A New Place...</h1>
-        <span>Share your secrets with other moms & their ninjas!</span>
+        <span className="share">Share your secrets with other moms & their ninjas!</span>
           <SSF onData={::this.dataHandler}>
             <div className="add-place-form">
               {/*<h4>Name of Place</h4>*/}
@@ -92,17 +92,17 @@ export default class AddPlace extends Component {
             </div>
             <div className="add-place-form">
               {/*<h4>Describe the Area</h4>*/}
-              <input type="text" name="description" className="reg-input-box2" placeholder="Description: First floor...etc"/>
+              <input type="text" name="description" className="reg-input-box" placeholder="Description: First floor...etc"/>
             </div>
             
             <div className="add-place-form">
               <h4>Privacy Rating</h4>
                 <ul className="radio-button">
-                  <li><label><input type="radio" className="input-circle" name="privacy" value="1"/>Poor</label></li>
-                  <li><label><input type="radio" className="input-circle" name="privacy" value="2"/>Fair</label></li>
-                  <li><label><input type="radio" className="input-circle" name="privacy" value="3"/>Average</label></li>
-                  <li><label><input type="radio" className="input-circle" name="privacy" value="4"/>Good</label></li>
-                  <li><label><input type="radio" className="input-circle" name="privacy" value="5"/>Excellent</label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="1"/><span className="rating-span">Poor</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="2"/><span className="rating-span">Fair</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="3"/><span className="rating-span">Average</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="4"/><span className="rating-span">Good</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="privacy" value="5"/><span className="rating-span">Excellent</span></label></li>
                 </ul>
             </div>            
 
@@ -110,11 +110,11 @@ export default class AddPlace extends Component {
               <h4>Cleanliness Rating</h4>
            
                 <ul className="radio-button">
-                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="1"/>Poor</label></li>
-                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="2"/>Fair</label></li>
-                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="3"/>Average</label></li>
-                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="4"/>Good</label></li>
-                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="5"/>Excellent</label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="1"/><span className="rating-span">Poor</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="2"/><span className="rating-span">Fair</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="3"/><span className="rating-span">Average</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="4"/><span className="rating-span">Good</span></label></li>
+                  <li><label><input type="radio" className="input-circle" name="cleanliness" value="5"/><span className="rating-span">Excellent</span></label></li>
                 </ul>
             </div>
             
