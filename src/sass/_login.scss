@@ -9,9 +9,10 @@
   background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
-  h1 {
-    padding-top: 1em;
-    margin-bottom: 1em;
-    font-size: 3em;
-  }
+  // h1 {
+  //   padding-top: 1em;
+  //   margin-bottom: 1em;
+  //   font-size: 3em;
+  //   font-style: $font-stack;
+  // }
 }

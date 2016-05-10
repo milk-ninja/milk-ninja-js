@@ -41,20 +41,24 @@ export default class Login extends Component {
 			<div className="login">
 			  
 			  <div>	
-				<h1>Login</h1>
+
+			  	<div>
+			  		<img src="./images/babyninja-300x300.png" className="ninja-baby-single"/>
+			  	</div>
+				{/*<h1>Login</h1>*/}
 				<SSF onData={this.dataHandler}>
 					<div>
-						<input type="text" name="username" className="reg-input-box" placeholder="username"/>
+						<input type="text" name="username" className="reg-input-box1" placeholder="username"/>
 					</div>
 					<div>
-						<input type="password" name="password" className="reg-input-box" placeholder="password"/>
+						<input type="password" name="password" className="reg-input-box2" placeholder="password"/>
 					</div>
-					<button id="login-btn">Submit</button>
+					<button id="login-btn">Log In</button>
 				</SSF>
 			  </div>
 
 			  <div>
-			  	<Link to="/register" >Register</Link>
+			    <Link to="/register" className="home-link" className="register-btn">Sign Up for Milk Ninja</Link>
 			  </div>
 
 			</div>
