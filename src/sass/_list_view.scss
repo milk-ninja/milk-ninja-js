@@ -1,7 +1,9 @@
 
 
 .list-view{
+  overflow: scroll;
   li {
+    z-index: -1;
     font-size: 3em;
     display: flex;
     align-items: center;

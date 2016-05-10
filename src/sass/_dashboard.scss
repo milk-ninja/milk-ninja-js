@@ -45,7 +45,7 @@ aside {
 
 .main-wrapper {
   display: flex;
-  height: 1434px;
+  height: 1254px;
   i {
     color: $app-white;
   }
@@ -76,9 +76,12 @@ footer {
   .official {
     display: flex;
     align-items: center;
-    span {
+    span:first-child {
       margin: 0 1em;
-      font-size: 1.25em;
+      font-size: 2.25em;
+    }
+    span:nth-child(2) {
+      margin: 0 1em;
     }
   }
 }
