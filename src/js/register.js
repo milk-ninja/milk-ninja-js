@@ -64,10 +64,10 @@ export default class Register extends Component {
 			  		<img src="./images/milk_ninja_mockup.png" className="ninja-baby-single-reg" width="250"/>
 			  	</div>
 			  {/*<h1>Registration</h1>*/}
-				<SSF onData={::this.dataHandler}>
+				<SSF onData={::this.dataHandler} className="reg-form">
 					<div className="picture">
-						<Dropzone onDrop={::this.dropHandler} id="dropzone">
-							{/*<span id="profile-pic-id">Update Profile Picture</span>	*/}	
+						<Dropzone onDrop={::this.dropHandler} className="dropzone">
+							<span id="profile-pic-id">Add A Profile Picture...</span>		
 							<input className="profile-picture" type="hidden" name="avatar" value={this.state.preview}/>
 							<img className="profile-picture" src={this.state.preview} alt="Update Profile Picture"/>
 				
