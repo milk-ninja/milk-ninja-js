@@ -39,14 +39,17 @@ html, body {
 
 .home {
   max-width: 100vw;
-  height: 100vh;
+  height: 1594px;
 
   //GRADIENT BACKGROUND IN APP BLUES
   background: #74b7bb; /* Old browsers */
-  background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+  background: -webkit-linear-gradient(top, #acd3d5 0%,#0e2234 100%);
+  // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 150%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: -webkit-linear-gradient(top, #acd3d5 0%,#0e2234 100%); /*Maybe too dark*/
+    // background: -webkit-linear-gradient(top, #acd3d5 0%,#528082 100%);
+
+  // background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
 
     .title-image-wrapper {
       h1 {
@@ -56,14 +59,14 @@ html, body {
       img {
         display: block;
         margin: auto;
-        height: 40em;
-        padding-top: 5em;
-        margin-bottom: 3em;
+        height: 32em;
+        padding-top: 2em;
+        margin-bottom: 1em;
       }
   }
     .describe-wrapper {
       font-size: 4em;
-      background-color: rgba(255, 255, 255, 0.30);
+      background-color: rgba(255, 255, 255, 0.40);
       padding: 10px 5px;
       h2 {
         color: white;
@@ -91,8 +94,11 @@ h2 {
 }
 
 .register-wrapper, .login-wrapper {
-  width: 50%;
+  min-width: 90%;
   margin: 3em auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .login-wrapper, .register-wrapper {
@@ -108,40 +114,34 @@ p {
 }
 
 
-#register-btn, #login-btn, #add-place-btn, #logout-btn {
+.register-btn, #register-btn, #login-btn {
   border-top: 1px solid #9db2bf;
-  background: #5a8db0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5a8db0));
-  background: -webkit-linear-gradient(top, #3e779d, #5a8db0);
-  background: -moz-linear-gradient(top, #3e779d, #5a8db0);
-  background: -ms-linear-gradient(top, #3e779d, #5a8db0);
-  background: -o-linear-gradient(top, #3e779d, #5a8db0);
-  padding: 8px 16px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  // background: #4C7D86;
+  background: $app-white;
+  // -webkit-border-radius: 10px;
+  // -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  box-shadow: rgba(0,0,0,1) 0 1px 0;
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-  color: white;
+  // -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  // -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  // box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.6) 1px 1px 5px;
+  box-shadow: inset 0px 0px 29px 0px rgba(50, 50, 50, 0.85);
+  // color: white;
+  color: $app-drk-blue;
   font-size: 4em;
   font-family: $font-stack;
   text-decoration: none;
   vertical-align: middle;
-  margin: 5px 5px;
+  margin: 5px auto;
+  text-align: center;
+  width: 95%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
- }  
-// .register-btn:hover, .login-btn:hover, #add-place-btn {
-//    border-top-color: #28597a;
-//    background: #28597a;
-//    color: #ccc;
-//    }
-// }
+}  
 
-#add-place-btn {
-  margin-left: 80%;
-}
 
 
 

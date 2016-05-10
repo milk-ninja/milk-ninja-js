@@ -58,9 +58,9 @@ export default class Dashboard extends Component {
           <footer>
 
             <div className="nav-links">
-              <Link to={'/dashboard'}><i className="fa fa-search" aria-hidden="true"/>Find A Place</Link>
-              <Link to={'/add_place'}><i className="fa fa-plus-circle" aria-hidden="true"/>Add A Place</Link>
-              <Link to={'/list_view'}><i className="fa fa-list" aria-hidden="true"/>List View</Link>
+              <Link to={'/dashboard'}><i className="fa fa-search" aria-hidden="true"/></Link>
+              <Link to={'/add_place'}><i className="fa fa-plus-circle" aria-hidden="true"/></Link>
+              <Link to={'/list_view'}><i className="fa fa-list" aria-hidden="true"/></Link>
             </div>
 
             <div className="official">
