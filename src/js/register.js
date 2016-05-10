@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SSF from 'react-simple-serial-form';
 import cookie from 'js-cookie';
 import { ajax, ajaxSetup } from 'jquery';
-import { hashHistory } from 'react-router';
+import { hashHistory, Link } from 'react-router';
 import Dropzone from 'react-dropzone';
 
 export default class Register extends Component {
@@ -96,7 +96,9 @@ export default class Register extends Component {
 					<br/>
 					<button id="reg-btn" className="register-btn">Submit</button>
 				</SSF>
-			
+				<div>
+			      <Link to="/login" className="home-link" className="register-link">Already have an account?  Sign In Here!</Link>
+			    </div>	
 			</div>
 
 		)
