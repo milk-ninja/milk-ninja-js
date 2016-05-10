@@ -71,28 +71,28 @@ export default class AddPlace extends Component {
         <span>Share your secrets with other moms & their ninjas!</span>
           <SSF onData={::this.dataHandler}>
             <div className="add-place-form">
-              <h4>Name of Place</h4>
-              <input type="text" name="name" className="reg-input-box" placeholder="What would you call this place?"/>
+              {/*<h4>Name of Place</h4>*/}
+              <input type="text" name="name" className="reg-input-box1" placeholder="Location"/>
             </div>
             <div className="add-place-form">
-              <h4>Building Number & Street Name (add NE, SW, etc)</h4>
+              {/*<h4>Building Number & Street Name (add NE, SW, etc)</h4>*/}
               <input type="text" name="street" className="reg-input-box" placeholder="Building Number and Street Name"/>
             </div>
             <div className="add-place-form">
-              <h4>City</h4>
+              {/*<h4>City</h4>*/}
               <input type="text" name="city" className="reg-input-box" placeholder="City"/>
             </div>
             <div className="add-place-form">
-              <h4>State</h4>
+              {/*<h4>State</h4>*/}
               <input type="text" name="state" className="reg-input-box" placeholder="State"/>
             </div>
             <div className="add-place-form">
-              <h4>Zip Code</h4>
+              {/*<h4>Zip Code</h4>*/}
               <input type="text" name="zip" className="reg-input-box" placeholder="Zip Code"/>
             </div>
             <div className="add-place-form">
-              <h4>Describe the Area</h4>
-              <input type="text" name="description" className="reg-input-box" placeholder="First floor...etc"/>
+              {/*<h4>Describe the Area</h4>*/}
+              <input type="text" name="description" className="reg-input-box2" placeholder="Description: First floor...etc"/>
             </div>
             
             <div className="add-place-form">
