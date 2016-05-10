@@ -12,7 +12,7 @@ export default class Home extends Component {
 
         <div className="title-image-wrapper">
           {/*<h1>Milk Ninja</h1>*/}
-          <img src="./images/milk_ninja_mockup.png"/>
+          <img src="./images/milk_ninja_mockup_final.png"/>
         </div>
 
         <div className="describe-wrapper">
@@ -21,12 +21,12 @@ export default class Home extends Component {
 
         <div className="register-wrapper">
           <p className="home-link">New User?</p>
-          <Link to="/register" className="home-link" className="register-btn">Find A Place</Link>
+          <Link to="/register" className="register-btn">Find A Place</Link>
         </div>
         
         <div className="login-wrapper">  
           <p className="home-link">Returning User?</p>
-          <Link to="/login" id="login-btn" className="home-link">Login</Link>
+          <Link to="/login" id="login-btn">Login</Link>
         </div>
 
       </div>

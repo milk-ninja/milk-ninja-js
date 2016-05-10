@@ -20,13 +20,16 @@ header {
   justify-content: space-between;
   img {
     border-radius: 100%;
-    height: 100px;
+    height: 110px;
   }
 
   span {
     margin: 20px;
     font-size: 2em;
     color: $app-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -42,28 +45,32 @@ aside {
 
 .main-wrapper {
   display: flex;
-  height: 1500px;
+  height: 1434px;
   i {
-    font-size: 2em;
-    color: white;
+    color: $app-white;
   }
 }
 
 footer {
   background: $app-red;
   display: flex;
-  height: 90px;
+  height: 160px;
   display: flex;
   justify-content: space-between;
   a, span, i {
-    color: white;
+    color: $app-white;
+  }
+  i {
+    font-size: 14em;
   }
   .nav-links {
    display: flex;
     align-items: center;
     a {
       margin: 0 .5em;
-      font-size: 2em;
+
+      //Icon Size below
+      font-size: 5em; 
     }
   } 
   .official {
@@ -75,6 +82,28 @@ footer {
     }
   }
 }
+
+#logout-btn {
+  border-top: 1px solid #9db2bf;
+  background: $app-white;
+  border-radius: 10px;
+  text-shadow: rgba(0,0,0,.6) 1px 1px 5px;
+  box-shadow: inset 0px 0px 29px 0px rgba(50, 50, 50, 0.85);
+  color: $app-drk-blue;
+  font-size: 4em;
+  font-family: $font-stack;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 10px 10px;
+  text-align: center;
+  width: 30%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}  
+
 
 
 
