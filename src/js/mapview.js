@@ -55,7 +55,9 @@ export default class MapView extends Component {
   makeMap(center) {
     this.map = new google.maps.Map(this.map, {
       center: center,
-      zoom: 18
+      zoom: 18,
+      // icon: './images/milk_ninja_baby.png'
+
     });
   }
 
@@ -64,10 +66,19 @@ export default class MapView extends Component {
       position: coords,
       map: this.map,
       icon: './images/ninja_head.png',
+      title: "Feeding Locations"
+    })
+  }
+
+	userMarker(coords) {
+    new google.maps.Marker({
+      position: coords,
+      map: this.map,
+      icon: './images/map-marker-2.png',
       title: "My Location"
     })
   }
-	
+
   componentDidMount() {
 
       this.setState({locationStatus: 'Pinpointing your location..'});
@@ -81,7 +92,7 @@ export default class MapView extends Component {
 
          this.makeMap({lat, lng});
 
-         this.addMarker({lat, lng});
+         this.userMarker({lat, lng});
 
          getNearbyPlaces(data => {
           console.log('iterating places', data.places);
