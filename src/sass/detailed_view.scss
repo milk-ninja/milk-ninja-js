@@ -1,6 +1,16 @@
+$app-black: #04050A;
+$app-drk-blue: #56BAEC;
+$app-lt-blue: #B4D8E7;
+$app-white: #E7EAE1;
+$app-red: #BA0D12;
+$app-pink: #FEADAD;
+$app-yellow: #FFEC94;
+$app-green: #B0E57C;
+$app-purple: #DB92BD;
+$app-other-lt-blue: #bbe3f7;
 
 .detailed-view {
-	background-color: #74b7bb;
+	background-color: $app-other-lt-blue;
 	height: 1500px;
 	overflow: scroll;
 }

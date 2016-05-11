@@ -1,9 +1,17 @@
-
+$app-black: #04050A;
+$app-drk-blue: #56BAEC;
+$app-lt-blue: #B4D8E7;
+$app-white: #E7EAE1;
+$app-red: #BA0D12;
+$app-pink: #FEADAD;
+$app-yellow: #FFEC94;
+$app-green: #B0E57C;
+$app-purple: #DB92BD;
 
 .add-place {
   height: 1254px;
   width: 100vw;
-  background-color: #74B7BB;
+  background-color: $app-pink;
   // background: #74b7bb; /* Old browsers */
   // background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
   // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
