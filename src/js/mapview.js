@@ -74,7 +74,7 @@ export default class MapView extends Component {
     new google.maps.Marker({
       position: coords,
       map: this.map,
-      icon: './images/map-marker-2.png',
+      icon: './images/small-map-marker-2.png',
       title: "My Location"
     })
   }
