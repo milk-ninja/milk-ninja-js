@@ -2,11 +2,15 @@
 $font-stack:    Helvetica, sans-serif;
 
 $app-black: #04050A;
-$app-drk-blue: #0E2234;
-$app-lt-blue: #74B7BB;
+$app-drk-blue: #56BAEC;
+$app-lt-blue: #B4D8E7;
 $app-white: #E7EAE1;
 $app-red: #BA0D12;
-
+$app-pink: #FEADAD;
+$app-yellow: #FFEC94;
+$app-green: #B0E57C;
+$app-purple: #DB92BD;
+$app-other-lt-blue: #bbe3f7;
 .dashboard {
   min-height: 100%;
   box-sizing: border-box;
@@ -26,39 +30,45 @@ header {
   span {
     margin: 20px;
     font-size: 2em;
-    color: $app-white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  width: 175px;
-  background: $app-lt-blue;
-  i {
-    color: white;
-  }
-}
+// aside {
+//   display: flex;
+//   flex-direction: column;
+//   width: 175px;
+//   background: $app-lt-blue;
+//   i {
+//     color: white;
+//   }
+// }
 
 .main-wrapper {
   display: flex;
   height: 1254px;
+  overflow: scroll;
+  main {
+    width: 100%;
+    background: #fff;
+  }
+  
   i {
     color: $app-white;
   }
 }
 
 footer {
-  background: $app-red;
+  background: $app-green;
   display: flex;
   height: 160px;
   display: flex;
   justify-content: space-between;
   a, span, i {
-    color: $app-white;
+    color: black;
   }
   i {
     font-size: 14em;
@@ -88,11 +98,11 @@ footer {
 
 #logout-btn {
   border-top: 1px solid #9db2bf;
-  background: $app-white;
+  background: $app-other-lt-blue;
   border-radius: 10px;
   text-shadow: rgba(0,0,0,.6) 1px 1px 5px;
-  box-shadow: inset 0px 0px 29px 0px rgba(50, 50, 50, 0.85);
-  color: $app-drk-blue;
+  box-shadow: inset 0px 0px 29px 0px rgba(119, 199, 239, 0.85);
+  color: white;
   font-size: 4em;
   font-family: $font-stack;
   text-decoration: none;
