@@ -37,7 +37,7 @@ export default class Dashboard extends Component {
          
           <header>
 
-            <span><img src={currentUser.avatar}/> {currentUser.username}</span>
+            <span><img src={currentUser.avatar}/> Hi, {currentUser.first_name}</span>
 
             <i className="fa fa-sign-out logout" aria-hidden="true" onClick={this.logOut}/>
 
