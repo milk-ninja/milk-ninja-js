@@ -39,7 +39,7 @@ export default class Dashboard extends Component {
 
             <span><img src={currentUser.avatar}/> {currentUser.username}</span>
 
-            <button id="logout-btn" onClick={this.logOut}>Log Out</button>
+            <i className="fa fa-sign-out logout" aria-hidden="true" onClick={this.logOut}/>
 
             {/*<h2>{this.state.locationStatus}</h2>*/}  
 
@@ -65,9 +65,9 @@ export default class Dashboard extends Component {
 
             <div className="official">
               <span>&copy; Milk Ninja 2016</span>
-              <span>
+              {/*<span>
                 <Link to={'/privacy'}>Privacy Policy</Link>
-              </span> 
+              </span>*/} 
             </div>
 
           </footer>

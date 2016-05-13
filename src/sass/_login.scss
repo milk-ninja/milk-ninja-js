@@ -1,16 +1,20 @@
+//Login Page Styling
+
+$font-stack: 'Basic', Helvetica, sans-serif;
+$ceviche: 'Ceviche One', Helvetica, sans-serif;
+
 $app-black: #04050A;
 $app-drk-blue: #56BAEC;
 $app-lt-blue: #B4D8E7;
+$app-test-blue: #86D2E0;
 $app-white: #E7EAE1;
 $app-red: #BA0D12;
 $app-pink: #FEADAD;
 $app-yellow: #FFEC94;
 $app-green: #B0E57C;
 $app-purple: #DB92BD;
-$app-other-lt-blue: #bbe3f7; 
-
-   /* Old browsers */
-
+$app-other-lt-blue: #bbe3f7;
+$app-test-green: #1FC39F; 
 
 .login {
   // border: 0 solid orange;
@@ -18,7 +22,7 @@ $app-other-lt-blue: #bbe3f7;
   min-height: 100vh;
   // border: 1px solid red;
   font-size: 1em;
-  background: $app-other-lt-blue;
+  background: $app-test-blue;
   // background: #74b7bb; /* Old browsers */
   // background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
   // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
@@ -53,7 +57,7 @@ img.ninja-baby-single {
   margin-right: auto;
   padding-top: 5vh;
   height: 30vh;
-  color: $app-white;
+  color: #000;
   font-size: 3em;
   text-align: center;
   // position: absolute;

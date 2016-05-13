@@ -1,6 +1,11 @@
+
+$montserrat: 'Montserrat', Helvetica, sans-serif;
+$ceviche: 'Ceviche One', Helvetica, sans-serif;
+
 $app-black: #04050A;
 $app-drk-blue: #56BAEC;
 $app-lt-blue: #B4D8E7;
+$app-test-blue: #86D2E0;
 $app-white: #E7EAE1;
 $app-red: #BA0D12;
 $app-pink: #FEADAD;
@@ -8,15 +13,16 @@ $app-yellow: #FFEC94;
 $app-green: #B0E57C;
 $app-purple: #DB92BD;
 $app-other-lt-blue: #bbe3f7;
+$app-test-green: #1FC39F;
 
 .detailed-view {
-	background-color: $app-other-lt-blue;
+	background-color: #f9f9f9;
 	height: 1500px;
 	overflow: scroll;
 }
 
 
-.detail_individual {
+.detail-individual {
 
 	li {
 		font-size: 1.5em;
@@ -24,41 +30,98 @@ $app-other-lt-blue: #bbe3f7;
 		margin-bottom: .75em;
 	}
 	.place-name {
-		font-size: 3.5em;
+		font-size: 4.5em;
 		font-weight: bold;
 		margin-bottom: .25em;
 		text-align: center;
+		font-family: $montserrat;
 	}
 	.place-address {
-		font-size: 1.5em;
+		font-size: 3em;
+    color: #666;
+    span {
+      color: #666;
+      font-size: 1.75em;
+    }
 	}
 	#detail-img {
 		height: 40vh;
 		width: auto;
-		border: 1px solid #0E2234;
+		border-radius: 1em;
 
 	}
 
 }
 
-.detail_ratings {
+.detail-ratings {
 	text-align: center;
+  .ratings-wrapper {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+
+  }
+}
+
+.all-info{
+  display: flex;
+  margin: 2em 0 2em 0;
+  .more-info {
+    width: 50%;
+    // font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    span:first-child {
+      font-size: 2em;
+      display: block;
+      
+    }
+    span:nth-child(2) {
+      font-size: 1em;
+      display: inline;
+    }
+    span:nth-child(3) {
+      font-size: 1em;
+      display: inline;
+
+    } 
+    span:nth-child(4) {
+      font-size: 1em;
+      display: inline;
+
+    }
+    
+  .detail-ratings {
+    width: 50%;
+
+  }
 }
 
 .ratings-header {
-	font-size: 3.5em;
+	font-size: 3em;
 	font-weight: bold;
-	margin-bottom: .25em;
 	display: block;
-	width: 100vw;
-	text-align: center;
+
 }
 
+}
 
-// a {
-// 	display: block;
-// 	font-size: 1.5em;	
-// 	color: #0E2234;
-// 	text-align: center;
-// 	margin-top: 2em;
-// 	}
+.google-directions {
+  font-size: 3.5em;
+  vertical-align: middle;
+  margin: 5px auto;
+  text-align: center;
+    a {
+    color: darken($app-test-blue, 25%);
+    }
+  }
+
+  .comments-wrapper {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin: 2em;
+  }
+

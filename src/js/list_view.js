@@ -51,19 +51,23 @@ export default class ListView extends Component {
               })
     }
     getPlace(place) {
-      // let placeImage = {place.avatar_url ? place.avatar_url : './images/ninja_head.png';
+      let placeImage = place.avatar_url ? place.avatar_url : './images/ninja_head.png';
       return(
         <Link to={`/places/${place.id}`}>
           <li key={place.id}>
             <div className="list-items">
               <div className="image-wrapper">
-                <img src="./images/milk_ninja_babyhead2.png"/>
+                <img src={place.avatar_url}/>
               </div>
-              <div className="name-wrapper">
-                {place.name}
-              </div>
-              <div className="address-wrapper">
-                {place.full_address}
+              <div className="name-address-wrapper">
+
+                <div className="name-wrapper">
+                  {place.name}
+                </div>
+                <div className="address-wrapper">
+                  {place.full_address}
+                </div>
+
               </div>
             </div>
           </li>

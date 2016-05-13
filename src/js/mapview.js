@@ -55,7 +55,7 @@ export default class MapView extends Component {
   makeMap(center) {
     this.map = new google.maps.Map(this.map, {
       center: center,
-      zoom: 12,
+      zoom: 14,
       // icon: './images/milk_ninja_baby.png'
 
     });
@@ -65,7 +65,7 @@ export default class MapView extends Component {
     new google.maps.Marker({
       position: coords,
       map: this.map,
-      icon: './images/ninja_head.png',
+      icon: './images/milk_ninja_baby_small_2.png',
       title: "Feeding Locations"
     })
   }
@@ -74,7 +74,7 @@ export default class MapView extends Component {
     new google.maps.Marker({
       position: coords,
       map: this.map,
-      icon: './images/small-map-marker-2.png',
+      icon: './images/Map-Marker-Ball-Pink-icon.png',
       title: "My Location"
     })
   }

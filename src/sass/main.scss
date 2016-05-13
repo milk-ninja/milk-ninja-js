@@ -9,7 +9,7 @@
 @import 'detailed_view';
 @import 'directions';
 
-$font-stack: 'Basic', Helvetica, sans-serif;
+$montserrat: 'Montserrat', Helvetica, sans-serif;
 $ceviche: 'Ceviche One', Helvetica, sans-serif;
 
 $app-black: #04050A;
@@ -32,7 +32,7 @@ $app-test-green: #1FC39F;
   padding: 0;
   box-sizing: border-box;
   color: black;
-  font-family: $font-stack;
+  font-family: $montserrat;
 }
 
 html, body { 
@@ -122,7 +122,7 @@ p {
 }
 
 
-.register-btn, #login-btn, {
+.register-btn, #login-btn {
   // border-top: 1px solid #9db2bf;
   // background: #4C7D86;
   background: #fff;
@@ -152,7 +152,7 @@ p {
 
 } 
 
-#register-btn, #add-place-btn {
+#register-btn {
   border-top: 1px solid #9db2bf;
   // background: #4C7D86;
   background: $app-white;
@@ -179,6 +179,7 @@ p {
   justify-content: center;
   
 }  
+
 
 
 

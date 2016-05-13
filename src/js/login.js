@@ -31,7 +31,7 @@ export default class Login extends Component {
 				})
 				cookie.set('currentUser', response.user, {expires: 3});
 				hashHistory.push('/dashboard')
-			})
+			}).fail(e => alert('Username and/or Password are incorrect.'))
 		}
 	}
 

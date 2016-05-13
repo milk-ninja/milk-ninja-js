@@ -29,11 +29,22 @@ export default class DetailedView extends Component {
 
   listRatings(rating_info) {
     return(
-      <ul>
-      <li>Privacy: {rating_info.privacy}</li> 
-      <li> Cleanliness: {rating_info.cleanliness} </li> 
-      <li>  Comments: {rating_info.comment} </li>
-      </ul>
+      <div className="ratings-wrapper">
+
+        <ul className="priv-clean-wrapper">
+          <li>Privacy: {rating_info.privacy}</li> 
+          <li>Cleanliness: {rating_info.cleanliness}</li> 
+        </ul>
+
+      </div>
+    )
+  }
+
+  listComments(comment_info) {
+    return(
+      <div className="comments-wrapper">
+        <span>Comments:{comment_info.comment}</span>
+      </div>
     )
   }
 
@@ -55,20 +66,25 @@ export default class DetailedView extends Component {
     return (
       <div className="detailed-view">
 
-        <ul className="detail_individual">
-          <li className="place-name"> { place_information.place.name} </li>
-          <li className="place-address">{ place_information.place.full_address } </li>          
-          <li> <img src={ place_information.place.avatar} id="detail-img"/> </li>
-          <li> Description: "{ place_information.place.description }" </li>
-
+        <ul className="detail-individual">
+          <li><span className="place-name">{ place_information.place.name}</span></li>
+          <li className="place-address">{ place_information.place.full_address }</li>          
+          <li><img src={ place_information.place.avatar} id="detail-img"/></li>
         </ul>
 
-        <div className="detail_ratings">
-          <span className="ratings-header">Ratings & Comments: </span>
+        <div className="all-info">
+          <div className="more-info">
+            <span>More Info:</span>
+            { place_information.place.description }
+          </div>
+          
+          <div className="detail-ratings">
+            <span className="ratings-header">Average Rating<br/>(out of 5):</span>
             {place_information.ratings.map(::this.listRatings)}
-        </div>
-
-
+          </div>
+            
+        </div>  
+        {place_information.ratings.map(::this.listComments)}
         <div className="google-directions">
           {/*<Link to='/directions_view'>Get Directions</Link>*/}
           <a href="http://www.google.com/maps/dir">Directions To Here</a>

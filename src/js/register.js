@@ -61,7 +61,7 @@ export default class Register extends Component {
 		return (
 			<div className="register">
 				<div>
-			  		<img src="./images/milk_ninja_mockup.png" className="ninja-baby-single-reg" width="250"/>
+			  		<img src="./images/milk_ninja_mockup_final.png" className="ninja-baby-single-reg"/>
 			  	</div>
 			  {/*<h1>Registration</h1>*/}
 				<SSF onData={::this.dataHandler} className="reg-form">
@@ -73,27 +73,30 @@ export default class Register extends Component {
 				
 						</Dropzone>
 					</div>
-					<div className="register-input">
-						<input type="text" name="first_name" className="reg-input-box1" placeholder="First Name"/>
+					<div className="shadow-form">
+						<div className="shadow-form-bottom">
+							<div className="register-input">
+								<input type="text" name="first_name" className="reg-input-box1" placeholder="First Name"/>
+							</div>
+							<div className="register-input">
+								<input type="text" name="last_name" className="reg-input-box" placeholder="Last Name"/>
+							</div>
+							<div className="register-input">
+								<input type="text" name="username" className="reg-input-box" placeholder="Choose a username"/>
+							</div>
+							<div className="register-input">
+								<input type="email" name="email" className="reg-input-box" placeholder="Email Address"/>
+							</div>
+							<div className="register-input">
+								<input type="password" name="password" className="reg-input-box" placeholder="Enter a Password"/>
+							</div>
+							<div className="register-input">
+								<input type="text" name="zipcode" className="reg-input-box2" placeholder="Enter Your Zip Code"/>
+							</div>
+						</div>
 					</div>
-					<div className="register-input">
-						<input type="text" name="last_name" className="reg-input-box" placeholder="Last Name"/>
-					</div>
-					<div className="register-input">
-						<input type="text" name="username" className="reg-input-box" placeholder="Choose a username"/>
-					</div>
-					<div className="register-input">
-						<input type="email" name="email" className="reg-input-box" placeholder="Email Address"/>
-					</div>
-					<div className="register-input">
-						<input type="password" name="password" className="reg-input-box" placeholder="Enter a Password"/>
-					</div>
-					<div className="register-input">
-						<input type="text" name="zipcode" className="reg-input-box2" placeholder="Enter Your Zip Code"/>
-					</div>
-
-
 					<br/>
+
 					<button id="reg-btn" className="register-btn">Submit</button>
 				</SSF>
 				<div>

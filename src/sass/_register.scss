@@ -1,12 +1,26 @@
 
+$montserrat: 'Montserrat', Helvetica, sans-serif;
+$ceviche: 'Ceviche One', Helvetica, sans-serif;
 
+$app-black: #04050A;
+$app-drk-blue: #56BAEC;
+$app-lt-blue: #B4D8E7;
+$app-test-blue: #86D2E0;
+$app-white: #E7EAE1;
+$app-red: #BA0D12;
+$app-pink: #FEADAD;
+$app-yellow: #FFEC94;
+$app-green: #B0E57C;
+$app-purple: #DB92BD;
+$app-other-lt-blue: #bbe3f7;
+$app-test-green: #1FC39F;
 
 .register {
   min-height: 100vh;
   // height: 1254px;
   // border: 1px solid red;
   // font-size: 1em;
-  background: $app-other-lt-blue;
+  background: $app-test-blue;
   // background: #74b7bb; /* Old browsers */
   // background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
   // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
@@ -21,7 +35,7 @@
 
 .reg-form {
   overflow: hidden;
-  height: 80vh;
+  height: 85vh;
   position: relative;
 }
 // form {
@@ -44,6 +58,7 @@ img.ninja-baby-single-reg {
   margin-right: auto;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  width: 300px;
 
 }
 
@@ -57,6 +72,8 @@ img.ninja-baby-single-reg {
 .reg-input-box1 {
     // margin-right: .5em;
     // margin-left: .5em;
+    // margin-top: 11px;
+
     font-size: 2.5em;
     width: 100%;
     height: 8vh;
@@ -75,7 +92,7 @@ img.ninja-baby-single-reg {
 .reg-input-box2 {
     // margin-right: .5em;
     // margin-left: .5em;
-    margin-bottom: 2vh;
+    // margin-bottom: 11px;
     font-size: 2.5em;
     width: 100%;
     height: 8vh;
@@ -84,6 +101,7 @@ img.ninja-baby-single-reg {
     border: .25px solid #ccc;
     // border-radius: 8px;
     padding: .5em;
+
     // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
@@ -134,6 +152,15 @@ img.ninja-baby-single-reg {
   }
 }
 
+// .shadow-form {
+//   box-shadow: inset 0px -9px 9px 0px rgba(50, 50, 50, 0.35);
+
+// }
+
+// .shadow-form-bottom {
+//   box-shadow: inset 0px 9px 10px 0px rgba(50, 50, 50, 0.35);
+// }
+
 .picture {
   width: 30vw;
   height: 20vh;
@@ -142,9 +169,9 @@ img.ninja-baby-single-reg {
   border: 2px solid $app-black;
   border-radius: 10px;
   position: relative;
-  background-color: #ffffff;
-
+  background-color: #fff;
   margin-bottom: 2em;
+  box-shadow: 4px 9px 5px 0px rgba(50, 50, 50, 0.60);
 }
 
 img.profile-picture {
