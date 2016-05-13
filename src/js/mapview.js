@@ -55,7 +55,7 @@ export default class MapView extends Component {
   makeMap(center) {
     this.map = new google.maps.Map(this.map, {
       center: center,
-      zoom: 14,
+      zoom: 12,
       // icon: './images/milk_ninja_baby.png'
 
     });
