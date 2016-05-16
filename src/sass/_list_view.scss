@@ -20,26 +20,17 @@ $app-test-green: #1FC39F;
   background: #f9f9f9;
 
   li {
-    // z-index: -1;
-    // font-size: 1em;
     display: flex;
     align-items: center;
     vertical-align: middle;
-    // border-left: #ccc 1px solid;
     border-bottom: #ccc 2px solid;
-    // border-right: #ccc 1px solid;
     height: 12em;
-
-    // overflow: hidden;
     .list-items {
-      // vertical-align: middle;
+  
       height: 100%;
       display: flex;
       flex-direction: row;
-      // overflow: hidden;
-      // text-overflow: clip;
-      // white-space: nowrap;
-      // margin: auto 2em;
+ 
       span {
         vertical-align: center;
       }
@@ -79,11 +70,9 @@ $app-test-green: #1FC39F;
 
 .name-wrapper {
   font-size: 4em;
-  // margin-right: .5em;
   width: 715px;
   display: flex;
   align-items: center;
-  // border: 1px solid red;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -93,18 +82,13 @@ $app-test-green: #1FC39F;
 
 .address-wrapper {
   font-size: 2.5em;
-  // flex-direction: row;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  // border: 1px solid red;
   width: 715px;
-  // padding: auto 0px;
   margin: .25em;
   color: #666;
 
 }
 
-// li:nth-child(even) {
-//   background: #ccc;
-// }
+
