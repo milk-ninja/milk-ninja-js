@@ -61,15 +61,6 @@ header {
   }
 }
 
-// aside {
-//   display: flex;
-//   flex-direction: column;
-//   width: 175px;
-//   background: $app-lt-blue;
-//   i {
-//     color: white;
-//   }
-// }
 
 .main-wrapper {
   display: flex;
@@ -122,31 +113,14 @@ footer {
       text-shadow: 1px 1px 2px #000000;
 
     }
-    // span:nth-child(2) {
-    //   margin: 0 1em;
-    //   text-shadow: 2px 2px 4px #000000;
 
-    // }
   }
 }
 
 #logout-btn {
-  // background: #fff;
-  // border-radius: 30px;
-  // box-shadow: 4px 9px 5px 0px rgba(50, 50, 50, 0.60);
-  // text-shadow: rgba(0,0,0,.6) 1px 1px 5px;
-  // color: #000;
-  // font-family: $ceviche;
-  // text-decoration: none;
-  // vertical-align: middle;
+
   margin: auto 15px auto 0;
-  // text-align: center;
-  // vertical-align: middle;
-  // width: 20%;
-  // height: 1.25em;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+
 } 
 
 
