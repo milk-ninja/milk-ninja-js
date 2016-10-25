@@ -1,8 +1,26 @@
+//mapview all new
+.mapview {
+	height: 1254px;
+	width: 100%;
+	position: relative;
+}
 
 #map {
-	height: 1254px;
-	width: 100vw;
+	height: 100% !important;
+	// height: 1254px;
+	width: 100%;
+	// width: 100vw;
 	background-color: #ccc;
-
+	//new code below
+	overflow: hidden;
+	position: relative;
+}
+// fixes scrolling issue on mapview
+.scroll-blocker {
+	width: 100%;
+	height: 100%;
+	min-height: 1200px;
+	position: absolute;
+	bottom: 0;
 }
 

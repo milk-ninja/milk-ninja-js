@@ -71,13 +71,13 @@ export default class MapView extends Component {
 	}
 
   }
-
+//scroll-blocker div is new Oct 2016
 	render() {
 		return (
 			<div className="mapview">
 
 				<div id="map" ref={ theActualDivElement => this.map = theActualDivElement }></div>
-
+        <div className="scroll-blocker"></div>
 			</div>
 		)
 	}
