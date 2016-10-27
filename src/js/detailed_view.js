@@ -86,8 +86,8 @@ export default class DetailedView extends Component {
         </div>  
         {place_information.ratings.map(::this.listComments)}
         <div className="google-directions">
-          {/*<Link to='/directions_view'>Get Directions</Link>*/}
-          <a href="http://www.google.com/maps/dir">Directions To Here</a>
+          <Link to='/directions_view'>Get Directions</Link>
+          {/*<a href="http://www.google.com/maps/dir">Directions To Here</a>*/}
         </div>
       </div>
 

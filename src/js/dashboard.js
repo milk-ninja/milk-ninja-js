@@ -3,9 +3,6 @@ import { render } from 'react-dom';
 import { Link, hashHistory } from 'react-router';
 import cookie from 'js-cookie';
 
-// import Icon from 'font-awesome';
-
-// import FourSquare from './foursquare';
 
 export default class Dashboard extends Component {
   
