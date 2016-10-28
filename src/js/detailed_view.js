@@ -70,7 +70,7 @@ export default class DetailedView extends Component {
           <li><span className="place-name">{ place_information.place.name}</span></li>
           <li className="place-address">{ place_information.place.full_address }</li>          
           <li><img src={ place_information.place.avatar} id="detail-img"/></li>
-          <li>{place_information.place.lat}, {place_information.place.lng} </li>
+          
         </ul>
 
         <div className="all-info">
