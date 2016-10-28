@@ -17,34 +17,27 @@ $app-other-lt-blue: #bbe3f7;
 $app-test-green: #1FC39F; 
 
 .login {
-  // border: 0 solid orange;
-
   min-height: 100vh;
-  // border: 1px solid red;
   font-size: 1em;
   background: $app-test-blue;
-  // background: #74b7bb; /* Old browsers */
-  // background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
-  // h1 {
-  //   padding-top: 1em;
-  //   margin-bottom: 1em;
-  //   font-size: 3em;
-  //   font-style: $font-stack;
-  // }
+  div {
+    height: 100%;
+    div {
+      .home-link {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .login-form {
-  height: 30vh;
+  // height: 30vh;
   overflow: hidden;
 }
 
 img.ninja-baby-single {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 20vh;
   padding-bottom: 15vh;
   
@@ -68,33 +61,26 @@ img.ninja-baby-single {
 .login-div {
     margin-right: auto;
     margin-left: auto;
-    width: 100vh;
+    width: 80%;
 }
 
 .login-input-box1 {
-    // margin-right: .5em;
-    // margin-left: .5em;
     font-size: 2.5em;
-    min-width: 90%;
+    width: 100%;
     height: 8vh;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     vertical-align: center;
-
     border: .25px solid #ccc;
-    // border-radius: 8px;
     padding: .5em;
-    // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
    }
 
 .login-input-box2 {
     // margin-right: .5em;
     // margin-left: .5em;
-    margin-bottom: 2vh;
+    margin-bottom: 25%;
     font-size: 2.5em;
-    min-width: 90%;
+    min-width: 100%;
     height: 8vh;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
