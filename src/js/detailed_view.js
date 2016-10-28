@@ -70,6 +70,7 @@ export default class DetailedView extends Component {
           <li><span className="place-name">{ place_information.place.name}</span></li>
           <li className="place-address">{ place_information.place.full_address }</li>          
           <li><img src={ place_information.place.avatar} id="detail-img"/></li>
+          <li>{place_information.place.lat}, {place_information.place.lng} </li>
         </ul>
 
         <div className="all-info">
@@ -77,6 +78,7 @@ export default class DetailedView extends Component {
             <span>More Info:</span>
             { place_information.place.description }
           </div>
+
           
           <div className="detail-ratings">
             <span className="ratings-header">Average Rating<br/>(out of 5):</span>
@@ -86,8 +88,9 @@ export default class DetailedView extends Component {
         </div>  
         {place_information.ratings.map(::this.listComments)}
         <div className="google-directions">
-          <Link to='/directions_view'>Get Directions</Link>
-          {/*<a href="http://www.google.com/maps/dir">Directions To Here</a>*/}
+          {/*<Link to='/directions_view'>Get Directions</Link>*/}
+          {/*<a href="https://www.google.com/maps/dir//34.04437,-84.3614937"> Directions</a>*/}
+          <a href={`https://www.google.com/maps/dir//${place_information.place.lat},${place_information.place.lng}`} target="_blank">Directions To Here</a>
         </div>
       </div>
 

@@ -9,22 +9,23 @@ export default class DirectionsView extends Component {
   }
 
 
-  initMap(center) {
-    var directionsDisplay = new google.maps.DirectionsRenderer;
-    var directionsService = new google.maps.DirectionsService; 
 
-    this.map = new google.maps.Map(this.map, {
-      center: center,
-      zoom: 18
-    });
+//   initMap(center) {
+//     var directionsDisplay = new google.maps.DirectionsRenderer;
+//     var directionsService = new google.maps.DirectionsService; 
 
-    directionsDisplay.setMap(this.map);
-    calculateAndDisplayRoute(directionsService, directionsDisplay);
+//     this.map = new google.maps.Map(this.map, {
+//       center: center,
+//       zoom: 18
+//     });
 
-    document.getElementById('mode').addEventListener('change', function() {
-    calculateAndDisplayRoute(directionsService, directionsDisplay);
-  });
-}
+//     directionsDisplay.setMap(this.map);
+//     calculateAndDisplayRoute(directionsService, directionsDisplay);
+
+//     document.getElementById('mode').addEventListener('change', function() {
+//     calculateAndDisplayRoute(directionsService, directionsDisplay);
+//   });
+// }
 
 
 
@@ -40,29 +41,29 @@ export default class DirectionsView extends Component {
   // calculateAndDisplayRoute(directionsService, directionsDisplay);
   
 
-  calculateAndDisplayRoute(directionsService, directionsDisplay) {
-    var selectedMode = document.getElementById('mode').value;
-    directionsService.route({
-      origin: {lat: 37.77, lng: -122.447},  // Haight.
-      destination: {lat: 37.768, lng: -122.511},  // Ocean Beach.
-      // Note that Javascript allows us to access the constant
-      // using square brackets and a string value as its
-      // "property."
-      travelMode: google.maps.TravelMode[selectedMode]
-      }, function(response, status) {
-      if (status == google.maps.DirectionsStatus.OK) {
-        directionsDisplay.setDirections(response);
-      } else {
-        window.alert('Directions request failed due to ' + status);
-      }
-    });
-}
+  // calculateAndDisplayRoute(directionsService, directionsDisplay) {
+  //   var selectedMode = document.getElementById('mode').value;
+  //   directionsService.route({
+  //     origin: {lat: 37.77, lng: -122.447},  // Haight.
+  //     destination: {lat: 37.768, lng: -122.511},  // Ocean Beach.
+  //     // Note that Javascript allows us to access the constant
+  //     // using square brackets and a string value as its
+  //     // "property."
+  //     travelMode: google.maps.TravelMode[selectedMode]
+  //     }, function(response, status) {
+  //     if (status == google.maps.DirectionsStatus.OK) {
+  //       directionsDisplay.setDirections(response);
+  //     } else {
+  //       window.alert('Directions request failed due to ' + status);
+  //     }
+  //   });
+// }
 
   render() {
 
     return (
       <div className="direcions-view">
-        <div id="floating-panel">
+        {/*<div id="floating-panel">
           <b>Mode of Travel: </b>
           <select id="mode">
             <option value="DRIVING">Driving</option>
@@ -70,8 +71,7 @@ export default class DirectionsView extends Component {
             <option value="BICYCLING">Bicycling</option>
             <option value="TRANSIT">Transit</option>
           </select>
-        </div>
-
+        </div>*/}
         <div id="directions-map" ref={ theDivElement => this.map = theDivElement }>
 
         </div>
