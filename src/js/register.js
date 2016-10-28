@@ -97,15 +97,14 @@ export default class Register extends Component {
 					</div>
 					<br/>
 
-					<button id="reg-btn" className="register-btn">Submit</button>
+					<button id="login-btn" >Submit</button>
 				</SSF>
 				<div>
-			      <Link to="/login" className="home-link" className="register-link">Already have an account?  Sign In Here!</Link>
-			    </div>	
+		      <Link to="/login" className="home-link" className="register-link">Already have an account?  Sign In Here!</Link>
+		    </div>	
 			</div>
 
 		)
 	}
-
 
 }

@@ -17,39 +17,22 @@ $app-test-green: #1FC39F;
 
 .register {
   min-height: 100vh;
-  // height: 1254px;
-  // border: 1px solid red;
-  // font-size: 1em;
   background: $app-test-blue;
-  // background: #74b7bb; /* Old browsers */
-  // background: -moz-linear-gradient(top,  #74b7bb 0%, #0e2234 100%, #2989d8 100%, #207cca 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(top,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to bottom,  #74b7bb 0%,#0e2234 100%,#2989d8 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b7bb', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
-  // h1 {
-  //   padding-top: 1em;
-  //   padding-bottom: 1em;
-  //   font-size: 3em;
-  // }
 }
 
 .reg-form {
   overflow: hidden;
-  height: 85vh;
   position: relative;
+  width: 90%;
+  margin: auto;
 }
-// form {
 
-
-// }
 img.ninja-baby-single {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 30vh;
   padding-bottom: 15vh;
-
-
 }
 
 img.ninja-baby-single-reg {
@@ -59,44 +42,36 @@ img.ninja-baby-single-reg {
   padding-top: 3vh;
   padding-bottom: 3vh;
   width: 300px;
-
 }
 
 .register-input {
-  // padding-left: 3em;
-  // margin-bottom: 2em;
   width: 100%;
+  margin: 3em 0;
+  input {
+    border-radius: 10px;
+  }
 }	
 
-
 .reg-input-box1 {
-
-    font-size: 2.5em;
-    width: 100%;
-    height: 8vh;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    vertical-align: center;
-    border: .25px solid #ccc;
-   	padding: .5em;
-    // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-   }
+  font-size: 2.5em;
+  width: 100%;
+  height: 8vh;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  vertical-align: center;
+  border: .25px solid #ccc;
+ 	padding: .5em;
+ }
 
 .reg-input-box2 {
-    font-size: 2.5em;
-    width: 100%;
-    height: 8vh;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: .25px solid #ccc;
-    padding: .5em;
-
-    // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-   }
+  font-size: 2.5em;
+  width: 100%;
+  height: 8vh;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: .25px solid #ccc;
+  padding: .5em;
+ }
 
 .reg-input-box {
   font-size: 2.5em;
@@ -153,7 +128,10 @@ img.profile-picture {
   left: 0;
   display: block;
   opacity: .6;
+}
 
+.shadow-form {
+  margin: 4em 0;
 }
 
 
