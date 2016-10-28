@@ -20,8 +20,6 @@ export default class MapView extends Component {
     this.map = new google.maps.Map(this.map, {
       center: center,
       zoom: 12,
-      // icon: './images/milk_ninja_baby.png'
-
     });
   }
 
@@ -45,7 +43,7 @@ export default class MapView extends Component {
 
   componentDidMount() {
 
-      this.setState({locationStatus: 'Pinpointing your location..'});
+    this.setState({locationStatus: 'Pinpointing your location..'});
 
       if ("geolocation" in navigator) {
          navigator.geolocation.getCurrentPosition((position) => {
@@ -61,15 +59,16 @@ export default class MapView extends Component {
          getNearbyPlaces(data => {
           console.log('iterating places', data.places);
           data.places.forEach(place => {
-            console.log('adding place', place);
             this.addMarker({lat: place.lat, lng: place.lng});
           })
          })
 
-		});
+		  });
 
-	}
-
+    }
+    // return(
+    //   <Link to={`/places/${place.id}`}>this.addMarker({lat: place.lat, lng: place.lng})</Link>
+    //   )
   }
 //scroll-blocker div is new Oct 2016
 	render() {

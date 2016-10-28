@@ -11,23 +11,21 @@ export default class Home extends Component {
       <div className="home">
 
         <div className="title-image-wrapper">
-          {/*<h1>Milk Ninja</h1>*/}
           <img src="./images/milk_ninja_mockup_final.png"/>
         </div>
 
         <div className="describe-wrapper">
-          <h2>Find great locations where you can comfortably feed your baby.</h2>
+          <h2>Feed your baby, anywhere.</h2>
         </div>
 
-        <div className="register-wrapper">
-          <p className="home-link">New User?</p>
-          <Link to="/register" className="register-btn">Find A Place</Link>
-        </div>
+        {/*<div className="register-wrapper">
+        </div>*/}
         
         <div className="login-wrapper">  
-          <p className="home-link">Returning User?</p>
+          <Link to="/register"><p className="home-link">New User?</p></Link>
           <Link to="/login" id="login-btn">Login</Link>
         </div>
+        
 
       </div>
       )
