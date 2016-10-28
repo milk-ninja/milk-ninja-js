@@ -28,7 +28,7 @@ render((
     	<Route path="/add_place" component={AddPlace}/>
     	<Route path="/privacy" component={Privacy}/>
         <Route path="/places/:id" component={DetailedView}/>
-        <Route path="/directions_view" component={DirectionsView}/>
+        {/*<Route path="/directions_view" component={DirectionsView}/>*/}
 
 
     </Route>    
