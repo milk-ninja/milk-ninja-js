@@ -21,6 +21,7 @@ export default class AddPlace extends Component {
       this.file = file;
   } 
 
+
     dataHandler(data) {
 
     let newPlace = new FormData();

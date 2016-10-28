@@ -13,7 +13,7 @@
 $roboto: 'Roboto', sans-serif;
 
 $app-black: #04050A;
-$app-drk-blue: #56BAEC;
+$app-drk-blue: #1a2a2c;
 $app-lt-blue: #B4D8E7;
 $app-test-blue: #86D2E0;
 $app-white: #E7EAE1;
@@ -114,7 +114,7 @@ p {
 
 
 #login-btn {
-  background: #000;
+  background: $app-drk-blue;
   border-radius: 2em;
   border: .2px solid #5d939c;
   color: #FFF;
