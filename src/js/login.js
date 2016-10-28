@@ -55,9 +55,9 @@ export default class Login extends Component {
 					</div>
 					<button id="login-btn">Log In</button>
 				</SSF>
-				
+
 		    <div>
-		      <Link to="/register" className="home-link">Register</Link>
+		      <Link to="/register" className="home-link">Register?</Link>
 		    </div>			  
 			</div>
 
