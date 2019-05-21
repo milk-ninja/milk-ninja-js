@@ -27,13 +27,9 @@ let nearbyPlaces = null;
 
 export function getNearbyPlaces(callback) {
 
-  console.log('A');
-
   if (false) {
-    console.log('B');
     callback(nearbyPlaces);
   } else {  
-    console.log('C')
     getCurrentLocation(coords => {
       ajax({
         url:`https://mighty-spire-68004.herokuapp.com/places/find_nearby`,
@@ -42,7 +38,7 @@ export function getNearbyPlaces(callback) {
         cached: false,
         dataType: 'json',   
       }).then(results => {
-        console.log('D', results);
+        console.log('Results', results);
         nearbyPlaces = results;
         callback(nearbyPlaces);
       }).fail((error) => {
