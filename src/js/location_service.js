@@ -23,10 +23,6 @@ export function getCurrentLocation(callback) {
   }
 }
 
-// getCurrentLocation(coords => {
-//   console.log(coords.lat, coords.lng); 
-// })
-
 let nearbyPlaces = null;
 
 export function getNearbyPlaces(callback) {
